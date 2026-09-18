@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1fdfdde12a8e8c64285bd6bd80a7e5a3
+guid: 1f8976dc9d25c6449ad77ab787c806ed
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: pentagrama
+  - name: cristal
     originalName: 
-    pivot: {x: 0.5, y: -0.13157895}
+    pivot: {x: 0.5, y: -0.09615385}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 82
-      height: 38
-    spriteID: 90479e0a23f7dc84180730317364926e
+      width: 34
+      height: 52
+    spriteID: 65e02c39da8713c4fb5b45699a557e2b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 1834305188
+      value0: 907613968
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: pentagrama
+    name: cristal
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: pentagrama
+    - name: cristal
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 29
+        x: 13
         y: 5
-        width: 82
-        height: 38
-      spriteId: 90479e0a23f7dc84180730317364926e
+        width: 34
+        height: 52
+      spriteId: 65e02c39da8713c4fb5b45699a557e2b
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -181,5 +181,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 140, y: 50}
-  previousTextureSize: {x: 128, y: 64}
+  canvasSize: {x: 60, y: 60}
+  previousTextureSize: {x: 64, y: 64}

@@ -26,7 +26,7 @@ public class Caderno : MonoBehaviour
     private Animator anim;
 
     // Estado interno
-    private int currentLife;
+    [SerializeField] private int currentLife;
     private float nextAttackTime;
     private bool isDead;
     private bool isTakingHit;
@@ -145,7 +145,7 @@ public class Caderno : MonoBehaviour
         anim.SetTrigger("attack");
 
         yield return new WaitForSeconds(shootDelay);
-        
+
         Shoot();
 
         yield return new WaitForSeconds(Mathf.Max(0, attackAnimDuration - shootDelay));
@@ -195,11 +195,33 @@ public class Caderno : MonoBehaviour
         isTakingHit = false;
     }
 
+    // private void Die()
+    // {
+    //     isDead = true;
+    //     rb.linearVelocity = Vector2.zero;
+    //     anim.SetTrigger("death");
+
+    //     Collider2D col = GetComponent<Collider2D>();
+    //     if (col != null) col.enabled = false;
+
+    //     Destroy(gameObject, 2f);
+    // }
+
+    [Header("Configurações de Drop")]
+    [SerializeField] private bool dropsCristal = true; // Desmarque no Inspector para o Boss Final
+    [SerializeField] private GameObject cristalPrefab;
+
     private void Die()
     {
         isDead = true;
         rb.linearVelocity = Vector2.zero;
         anim.SetTrigger("death");
+
+        // Instancia o cristal na posição atual do inimigo ao morrer
+        if (dropsCristal && cristalPrefab != null)
+        {
+            Instantiate(cristalPrefab, transform.position, Quaternion.identity);
+        }
 
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;

@@ -118,61 +118,26 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask enemyLayer; // Layer onde o Caderno se encontra
     [SerializeField] private int attackDamage = 1;
 
-//     void OnAttack()
-// {
-//     // Só permite atacar se NÃO estiver atacando no momento
-//     if (Input.GetButtonDown("Fire1") && !attackAnim )
-//     {
-//         attackAnim = true;
-
-//         isAttacking = true;
-
-//         // Executa o dano no momento do clique
-//         if (point != null)
-//         {
-//             Collider2D hit = Physics2D.OverlapCircle(point.position, radius, enemyLayer);
-
-//             if (hit != null)
-//             {
-//                 Caderno caderno = hit.GetComponent<Caderno>();
-//                 if (caderno != null)
-//                 {
-//                     caderno.TakeDamage(1);
-//                 }
-//             }
-//         }
-
-//         // Reseta o estado do ataque acompanhando a duração da animação
-//         StartCoroutine(ResetAttack());
-//     }
-// }
-
-void OnAttack()
+    void OnAttack()
     {
         // Só permite atacar se NÃO estiver atacando no momento
         if (Input.GetButtonDown("Fire1") && !attackAnim)
         {
             attackAnim = true;
+
             isAttacking = true;
 
-            // Executa a detecção de dano
+            // Executa o dano no momento do clique
             if (point != null)
             {
-                // Busca TODOS os colliders na área de impacto com a Layer selecionada
-                Collider2D[] hits = Physics2D.OverlapCircleAll(point.position, radius, enemyLayer);
+                Collider2D hit = Physics2D.OverlapCircle(point.position, radius, enemyLayer);
 
-                foreach (Collider2D hit in hits)
+                if (hit != null)
                 {
-                    // Tenta pegar o Caderno no objeto atingido ou nos seus pais
-                    Caderno caderno = hit.GetComponentInParent<Caderno>();
-                    if (caderno == null)
-                    {
-                        caderno = hit.GetComponent<Caderno>();
-                    }
-
+                    Caderno caderno = hit.GetComponent<Caderno>();
                     if (caderno != null)
                     {
-                        caderno.TakeDamage(attackDamage);
+                        caderno.TakeDamage(1);
                     }
                 }
             }
@@ -181,13 +146,48 @@ void OnAttack()
             StartCoroutine(ResetAttack());
         }
     }
-IEnumerator ResetAttack()
-{
-    // Tempo aproximado da animação do ataque tocar por inteiro
-    yield return new WaitForSeconds(0.4f);
-    attackAnim = false;
-    isAttacking = false;
-}
+
+    // void OnAttack()
+    //     {
+    //         // Só permite atacar se NÃO estiver atacando no momento
+    //         if (Input.GetButtonDown("Fire1") && !attackAnim)
+    //         {
+    //             attackAnim = true;
+    //             isAttacking = true;
+
+    //             // Executa a detecção de dano
+    //             if (point != null)
+    //             {
+    //                 // Busca TODOS os colliders na área de impacto com a Layer selecionada
+    //                 Collider2D[] hits = Physics2D.OverlapCircleAll(point.position, radius, enemyLayer);
+
+    //                 foreach (Collider2D hit in hits)
+    //                 {
+    //                     // Tenta pegar o Caderno no objeto atingido ou nos seus pais
+    //                     Caderno caderno = hit.GetComponent<Caderno>();
+    //                     if (caderno == null)
+    //                     {
+    //                         caderno = hit.GetComponent<Caderno>();
+    //                     }
+
+    //                     if (caderno != null)
+    //                     {
+    //                         caderno.TakeDamage(attackDamage);
+    //                     }
+    //                 }
+    //             }
+
+    //             // Reseta o estado do ataque acompanhando a duração da animação
+    //             StartCoroutine(ResetAttack());
+    //         }
+    //     }
+    IEnumerator ResetAttack()
+    {
+        // Tempo aproximado da animação do ataque tocar por inteiro
+        yield return new WaitForSeconds(0.4f);
+        attackAnim = false;
+        isAttacking = false;
+    }
 
     public void OnHit()
     {

@@ -34,20 +34,61 @@
 //     }
 // }
 
+// using UnityEngine;
+// using UnityEngine.SceneManagement;
+
+// public class GameOverManager : MonoBehaviour
+// {
+//     [Header("Tela/Painel Completo de Game Over")]
+//     [SerializeField] private GameObject gameOverPanel; // Arraste o objeto GameOver aqui
+
+//     [Header("Nome da Cena do Menu")]
+//     [SerializeField] private string mainMenuSceneName = "MainMenu";
+
+//     private void Awake()
+//     {
+//         // Garante que todo o conjunto (fundo, animação e botões) comece escondido
+//         if (gameOverPanel != null)
+//         {
+//             gameOverPanel.SetActive(false);
+//         }
+//     }
+
+//     public void ShowGameOver()
+//     {
+//         if (gameOverPanel != null)
+//         {
+//             gameOverPanel.SetActive(true);
+//         }
+//     }
+
+//     public void RestartGame()
+//     {
+//         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+//     }
+
+//     public void GoToMainMenu()
+//     {
+//         SceneManager.LoadScene(mainMenuSceneName);
+//     }
+// }
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour
 {
-    [Header("Tela/Painel Completo de Game Over")]
-    [SerializeField] private GameObject gameOverPanel; // Arraste o objeto GameOver aqui
+    [Header("Painel da Tela de Game Over")]
+    [SerializeField] private GameObject gameOverPanel;
+
+    [Header("UI do Jogo (HUD)")]
+    [SerializeField] private GameObject hudPanel; // Arraste o objeto/painel das vidas e coletáveis aqui
 
     [Header("Nome da Cena do Menu")]
     [SerializeField] private string mainMenuSceneName = "MainMenu";
 
     private void Awake()
     {
-        // Garante que todo o conjunto (fundo, animação e botões) comece escondido
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(false);
@@ -56,6 +97,13 @@ public class GameOverManager : MonoBehaviour
 
     public void ShowGameOver()
     {
+        // Esconde a interface de gameplay (vidas e coletáveis)
+        if (hudPanel != null)
+        {
+            hudPanel.SetActive(false);
+        }
+
+        // Exibe a tela de Game Over
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(true);

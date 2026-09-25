@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: fa6d246cd6559f240a666725ad4341af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1019280579002100145
+    second: "porta-fase_anima\xE7ao -spriteSheet_0"
+  - first:
+      213: 3933741737626000739
+    second: "porta-fase_anima\xE7ao -spriteSheet_1"
+  - first:
+      213: 6972920436247775871
+    second: "porta-fase_anima\xE7ao -spriteSheet_2"
+  - first:
+      213: 1057013491327003618
+    second: "porta-fase_anima\xE7ao -spriteSheet_3"
+  - first:
+      213: -1954983135522240393
+    second: "porta-fase_anima\xE7ao -spriteSheet_4"
+  - first:
+      213: 7941861895388040067
+    second: "porta-fase_anima\xE7ao -spriteSheet_5"
+  - first:
+      213: 9140127464297718472
+    second: "porta-fase_anima\xE7ao -spriteSheet_6"
+  - first:
+      213: 4894495482422999791
+    second: "porta-fase_anima\xE7ao -spriteSheet_7"
+  - first:
+      213: -1398003710959038653
+    second: "porta-fase_anima\xE7ao -spriteSheet_8"
+  - first:
+      213: 3543952736420206277
+    second: "porta-fase_anima\xE7ao -spriteSheet_9"
+  - first:
+      213: -2552080561654418400
+    second: "porta-fase_anima\xE7ao -spriteSheet_10"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "porta-fase_anima\xE7ao -spriteSheet_0"
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 48
+        width: 352
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9efd54946352e00800000000000000
+      internalID: 1019280579002100145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "porta-fase_anima\xE7ao -spriteSheet_1"
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 48
+        width: 352
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d535db445779630800000000000000
+      internalID: 3933741737626000739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "porta-fase_anima\xE7ao -spriteSheet_2"
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 48
+        width: 352
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a4c91513ac4c060800000000000000
+      internalID: 6972920436247775871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "porta-fase_anima\xE7ao -spriteSheet_3"
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 48
+        width: 352
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb67598b244bae00800000000000000
+      internalID: 1057013491327003618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "porta-fase_anima\xE7ao -spriteSheet_4"
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 48
+        width: 352
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778415932318ed4e0800000000000000
+      internalID: -1954983135522240393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "porta-fase_anima\xE7ao -spriteSheet_5"
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 48
+        width: 352
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b80d9e059273e60800000000000000
+      internalID: 7941861895388040067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "porta-fase_anima\xE7ao -spriteSheet_6"
+      rect:
+        serializedVersion: 2
+        x: 3076
+        y: 48
+        width: 352
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2e147908148de70800000000000000
+      internalID: 9140127464297718472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "porta-fase_anima\xE7ao -spriteSheet_7"
+      rect:
+        serializedVersion: 2
+        x: 3576
+        y: 48
+        width: 352
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feab39885bdbce340800000000000000
+      internalID: 4894495482422999791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "porta-fase_anima\xE7ao -spriteSheet_8"
+      rect:
+        serializedVersion: 2
+        x: 4076
+        y: 48
+        width: 352
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34fcb95280b499ce0800000000000000
+      internalID: -1398003710959038653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "porta-fase_anima\xE7ao -spriteSheet_9"
+      rect:
+        serializedVersion: 2
+        x: 4576
+        y: 48
+        width: 352
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c69913bc36ae2130800000000000000
+      internalID: 3543952736420206277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "porta-fase_anima\xE7ao -spriteSheet_10"
+      rect:
+        serializedVersion: 2
+        x: 5076
+        y: 48
+        width: 352
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024b86c2040359cd0800000000000000
+      internalID: -2552080561654418400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "porta-fase_anima\xE7ao -spriteSheet_0": 1019280579002100145
+      "porta-fase_anima\xE7ao -spriteSheet_1": 3933741737626000739
+      "porta-fase_anima\xE7ao -spriteSheet_10": -2552080561654418400
+      "porta-fase_anima\xE7ao -spriteSheet_2": 6972920436247775871
+      "porta-fase_anima\xE7ao -spriteSheet_3": 1057013491327003618
+      "porta-fase_anima\xE7ao -spriteSheet_4": -1954983135522240393
+      "porta-fase_anima\xE7ao -spriteSheet_5": 7941861895388040067
+      "porta-fase_anima\xE7ao -spriteSheet_6": 9140127464297718472
+      "porta-fase_anima\xE7ao -spriteSheet_7": 4894495482422999791
+      "porta-fase_anima\xE7ao -spriteSheet_8": -1398003710959038653
+      "porta-fase_anima\xE7ao -spriteSheet_9": 3543952736420206277
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

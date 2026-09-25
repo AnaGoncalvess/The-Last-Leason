@@ -55,6 +55,31 @@ public class ColetaveisManager : MonoBehaviour
     private int cristalCount = 0;
     private int moedaCount = 0;
 
+
+
+    [SerializeField] private int totalCristaisNaFase = 1;
+    [SerializeField] private GameObject chavePrefab;
+    [SerializeField] private PortaController porta;
+    [SerializeField] private Transform pontoSpawnChave; // Onde a chave aparece (ex: no último cristal ou no Player)
+
+    public void AddCristal()
+    {
+        cristalCount++;
+        UpdateUI();
+
+        if (cristalCount >= totalCristaisNaFase)
+        {
+            ChamarChaveVoadora();
+        }
+    }
+
+    private void ChamarChaveVoadora()
+    {
+        GameObject chaveObj = Instantiate(chavePrefab, pontoSpawnChave.position, Quaternion.identity);
+        ChaveVoadora chave = chaveObj.GetComponent<ChaveVoadora>();
+        chave.IniciarVoo(porta.PontoFechadura, porta);
+    }
+
     private void Awake()
     {
         if (instance == null)
@@ -72,11 +97,7 @@ public class ColetaveisManager : MonoBehaviour
         UpdateUI();
     }
 
-    public void AddCristal()
-    {
-        cristalCount++;
-        UpdateUI();
-    }
+    
 
     public void AddMoeda()
     {

@@ -1,45 +1,3 @@
-// using UnityEngine;
-// using TMPro;
-
-// public class CristalManager : MonoBehaviour
-// {
-//     public static CristalManager instance;
-
-//     [Header("UI do Contador")]
-//     [SerializeField] private TextMeshProUGUI cristalText;
-//     private int cristalCount = 0;
-
-//     private void Awake()
-//     {
-//         if (instance == null)
-//         {
-//             instance = this;
-//         }
-//         else
-//         {
-//             Destroy(gameObject);
-//         }
-//     }
-
-//     private void Start()
-//     {
-//         UpdateUI();
-//     }
-
-//     public void AddCristal()
-//     {
-//         cristalCount++;
-//         UpdateUI();
-//     }
-
-//     private void UpdateUI()
-//     {
-//         if (cristalText != null)
-//         {
-//             cristalText.text = cristalCount.ToString();
-//         }
-//     }
-// }
 
 // using UnityEngine;
 // using TMPro;
@@ -52,33 +10,16 @@
 //     [SerializeField] private TextMeshProUGUI cristalText;
 //     [SerializeField] private TextMeshProUGUI moedaText;
 
-//     private int cristalCount = 0;
-//     private int moedaCount = 0;
-
-
-
-//     [SerializeField] private int totalCristaisNaFase = 1;
+//     [Header("Configuração da Chave e Porta")]
 //     [SerializeField] private GameObject chavePrefab;
 //     [SerializeField] private PortaController porta;
-//     [SerializeField] private Transform pontoSpawnChave; // Onde a chave aparece (ex: no último cristal ou no Player)
+//     [SerializeField] private Transform pontoSpawnChave;
 
-//     public void AddCristal()
-//     {
-//         cristalCount++;
-//         UpdateUI();
-
-//         if (cristalCount >= totalCristaisNaFase)
-//         {
-//             ChamarChaveVoadora();
-//         }
-//     }
-
-//     private void ChamarChaveVoadora()
-//     {
-//         GameObject chaveObj = Instantiate(chavePrefab, pontoSpawnChave.position, Quaternion.identity);
-//         ChaveVoadora chave = chaveObj.GetComponent<ChaveVoadora>();
-//         chave.IniciarVoo(porta.PontoFechadura, porta);
-//     }
+//     private int cristalCount = 0;
+//     private int moedaCount = 0;
+//     private int totalColetaveisNaCena = 0;
+//     private int totalColetados = 0;
+//     private bool chaveCriada = false; // Trava para evitar spawn duplo
 
 //     private void Awake()
 //     {
@@ -92,56 +33,84 @@
 //         }
 //     }
 
-//     // private void Start()
-//     // {
-//     //     UpdateUI();
-//     // }
-
 //     private void Start()
 //     {
 //         totalColetaveisNaCena = FindObjectsByType<ItemColetavel>(FindObjectsSortMode.None).Length;
-//         Debug.Log($"Total de itens detectados no início da fase: {totalColetaveisNaCena}");
 //         UpdateUI();
 //     }
 
-//     private void VerificarConclusao()
+//     public void AddCristal()
 //     {
-//         Debug.Log($"Itens Recolhidos: {totalColetados} de {totalColetaveisNaCena}");
-
-//         if (totalColetados >= totalColetaveisNaCena && totalColetaveisNaCena > 0)
-//         {
-//             ChamarChaveVoadora();
-//         }
+//         cristalCount++;
+//         totalColetados++;
+//         UpdateUI();
+//         VerificarConclusao();
 //     }
 
 //     public void AddMoeda()
 //     {
 //         moedaCount++;
+//         totalColetados++;
 //         UpdateUI();
+//         VerificarConclusao();
 //     }
+
+//     private void VerificarConclusao()
+//     {
+//         if (!chaveCriada && totalColetados >= totalColetaveisNaCena && totalColetaveisNaCena > 0)
+//         {
+//             chaveCriada = true; // Garante que só executa uma vez
+//             ChamarChaveVoadora();
+//         }
+//     }
+
+//     // private void ChamarChaveVoadora()
+//     // {
+//     //     if (chavePrefab != null && porta != null)
+//     //     {
+//     //         Vector3 posicaoSpawn = pontoSpawnChave != null ? pontoSpawnChave.position : transform.position;
+//     //         GameObject chaveObj = Instantiate(chavePrefab, posicaoSpawn, Quaternion.identity);
+            
+//     //         ChaveVoadora chave = chaveObj.GetComponent<ChaveVoadora>();
+//     //         if (chave != null)
+//     //         {
+//     //             chave.IniciarVoo(porta.PontoFechadura, porta);
+//     //         }
+//     //     }
+//     // }
+
+//     private void ChamarChaveVoadora()
+// {
+//     if (chavePrefab != null && porta != null)
+//     {
+//         Vector3 posicaoSpawn = pontoSpawnChave != null ? pontoSpawnChave.position : transform.position;
+//         GameObject chaveObj = Instantiate(chavePrefab, posicaoSpawn, Quaternion.identity);
+        
+//         ChaveColetavel chave = chaveObj.GetComponent<ChaveColetavel>();
+//         if (chave != null)
+//         {
+//             chave.ConfigurarChave(porta);
+//         }
+//     }
+// }
 
 //     private void UpdateUI()
 //     {
-//         if (cristalText != null)
-//         {
-//             cristalText.text = cristalCount.ToString();
-//         }
-
-//         if (moedaText != null)
-//         {
-//             moedaText.text = moedaCount.ToString();
-//         }
+//         if (cristalText != null) cristalText.text = cristalCount.ToString();
+//         if (moedaText != null) moedaText.text = moedaCount.ToString();
 //     }
 // }
 
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ColetaveisManager : MonoBehaviour
 {
-    public static ColetaveisManager instance;
+    public static ColetaveisManager Instance { get; private set; }
+    public static ColetaveisManager instance => Instance;
 
-    [Header("UI dos Contadores")]
+    [Header("UI dos Contadores na Prancheta")]
     [SerializeField] private TextMeshProUGUI cristalText;
     [SerializeField] private TextMeshProUGUI moedaText;
 
@@ -150,88 +119,181 @@ public class ColetaveisManager : MonoBehaviour
     [SerializeField] private PortaController porta;
     [SerializeField] private Transform pontoSpawnChave;
 
-    private int cristalCount = 0;
-    private int moedaCount = 0;
-    private int totalColetaveisNaCena = 0;
-    private int totalColetados = 0;
-    private bool chaveCriada = false; // Trava para evitar spawn duplo
+    // Totais globais mantidos entre as fases
+    private static int totalCristaisGlobal = 0;
+    private static int totalMoedasGlobal = 0;
+
+    private int coletaveisNaCenaAtual = 0;
+    private int coletadosNaCenaAtual = 0;
+    private bool chaveCriada = false;
 
     private void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
+            return;
         }
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        totalColetaveisNaCena = FindObjectsByType<ItemColetavel>(FindObjectsSortMode.None).Length;
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        coletadosNaCenaAtual = 0;
+        chaveCriada = false;
+
+        // Força encontrar os novos componentes de UI da cena carregada
+        BuscarReferenciasNaCena();
+
+        // Quantidade de coletáveis na nova fase
+        coletaveisNaCenaAtual = FindObjectsByType<ItemColetavel>(FindObjectsSortMode.None).Length;
+
         UpdateUI();
     }
 
-    public void AddCristal()
+    public void BuscarReferenciasNaCena()
     {
-        cristalCount++;
-        totalColetados++;
+        // Reencontra a porta do novo nível
+        porta = FindFirstObjectByType<PortaController>();
+
+        // Reencontra os textos de pontuação do Canvas atual na cena
+        TextMeshProUGUI[] todosTextos = FindObjectsByType<TextMeshProUGUI>(FindObjectsSortMode.None);
+
+        foreach (var texto in todosTextos)
+        {
+            string nomeObjeto = texto.gameObject.name.ToLower();
+
+            if (nomeObjeto.Contains("cristal") || nomeObjeto.Contains("txt_cristal"))
+            {
+                cristalText = texto;
+            }
+            else if (nomeObjeto.Contains("moeda") || nomeObjeto.Contains("lampada") || nomeObjeto.Contains("txt_lampada") || nomeObjeto.Contains("txt_moeda"))
+            {
+                moedaText = texto;
+            }
+        }
+    }
+
+    // public void AddCristal()
+    // {
+    //     totalCristaisGlobal++;
+    //     coletadosNaCenaAtual++;
+    //     UpdateUI();
+    //     VerificarConclusao();
+    // }
+
+    // public void AddMoeda()
+    // {
+    //     totalMoedasGlobal++;
+    //     coletadosNaCenaAtual++;
+    //     UpdateUI();
+    //     VerificarConclusao();
+    // }
+public void AddCristal()
+    {
+        totalCristaisGlobal++;
+        coletadosNaCenaAtual++;
         UpdateUI();
         VerificarConclusao();
     }
 
     public void AddMoeda()
     {
-        moedaCount++;
-        totalColetados++;
+        totalMoedasGlobal++;
+        coletadosNaCenaAtual++;
         UpdateUI();
         VerificarConclusao();
     }
 
+    private void UpdateUI()
+    {
+        // Se as referências da UI estiverem perdidas/nulas, reconecta imediatamente
+        if (cristalText == null || moedaText == null)
+        {
+            ReconectarReferenciasEAtualizarUI();
+            return;
+        }
+
+        if (cristalText != null) cristalText.text = totalCristaisGlobal.ToString();
+        if (moedaText != null) moedaText.text = totalMoedasGlobal.ToString();
+    }
+
+    public void ReconectarReferenciasEAtualizarUI()
+    {
+        // Busca todos os TextMeshProUGUI presentes na cena do Nível 2
+        TextMeshProUGUI[] todosTextos = FindObjectsByType<TextMeshProUGUI>(FindObjectsSortMode.None);
+
+        foreach (var texto in todosTextos)
+        {
+            string nome = texto.gameObject.name.ToLower();
+
+            if (nome.Contains("cristal"))
+            {
+                cristalText = texto;
+            }
+            else if (nome.Contains("lampada") || nome.Contains("moeda"))
+            {
+                moedaText = texto;
+            }
+        }
+
+        // Atualiza os valores visuais na tela
+        if (cristalText != null) cristalText.text = totalCristaisGlobal.ToString();
+        if (moedaText != null) moedaText.text = totalMoedasGlobal.ToString();
+    }
     private void VerificarConclusao()
     {
-        if (!chaveCriada && totalColetados >= totalColetaveisNaCena && totalColetaveisNaCena > 0)
+        if (!chaveCriada && coletadosNaCenaAtual >= coletaveisNaCenaAtual && coletaveisNaCenaAtual > 0)
         {
-            chaveCriada = true; // Garante que só executa uma vez
+            chaveCriada = true;
             ChamarChaveVoadora();
         }
     }
 
-    // private void ChamarChaveVoadora()
-    // {
-    //     if (chavePrefab != null && porta != null)
-    //     {
-    //         Vector3 posicaoSpawn = pontoSpawnChave != null ? pontoSpawnChave.position : transform.position;
-    //         GameObject chaveObj = Instantiate(chavePrefab, posicaoSpawn, Quaternion.identity);
-            
-    //         ChaveVoadora chave = chaveObj.GetComponent<ChaveVoadora>();
-    //         if (chave != null)
-    //         {
-    //             chave.IniciarVoo(porta.PontoFechadura, porta);
-    //         }
-    //     }
-    // }
-
     private void ChamarChaveVoadora()
-{
-    if (chavePrefab != null && porta != null)
     {
-        Vector3 posicaoSpawn = pontoSpawnChave != null ? pontoSpawnChave.position : transform.position;
-        GameObject chaveObj = Instantiate(chavePrefab, posicaoSpawn, Quaternion.identity);
-        
-        ChaveColetavel chave = chaveObj.GetComponent<ChaveColetavel>();
-        if (chave != null)
+        if (chavePrefab != null && porta != null)
         {
-            chave.ConfigurarChave(porta);
+            Vector3 posicaoSpawn = pontoSpawnChave != null ? pontoSpawnChave.position : transform.position;
+            GameObject chaveObj = Instantiate(chavePrefab, posicaoSpawn, Quaternion.identity);
+
+            ChaveColetavel chave = chaveObj.GetComponent<ChaveColetavel>();
+            if (chave != null)
+            {
+                chave.ConfigurarChave(porta);
+            }
         }
     }
-}
 
-    private void UpdateUI()
+    // private void UpdateUI()
+    // {
+    //     // Se as referências estiverem nulas, tenta reatribuir antes de escrever
+    //     if (cristalText == null || moedaText == null)
+    //     {
+    //         BuscarReferenciasNaCena();
+    //     }
+
+    //     if (cristalText != null) cristalText.text = totalCristaisGlobal.ToString();
+    //     if (moedaText != null) moedaText.text = totalMoedasGlobal.ToString();
+    // }
+
+    public static void ResetarProgressoGlobal()
     {
-        if (cristalText != null) cristalText.text = cristalCount.ToString();
-        if (moedaText != null) moedaText.text = moedaCount.ToString();
+        totalCristaisGlobal = 0;
+        totalMoedasGlobal = 0;
     }
 }

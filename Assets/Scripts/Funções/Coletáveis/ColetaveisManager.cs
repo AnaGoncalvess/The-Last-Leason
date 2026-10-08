@@ -1,106 +1,3 @@
-
-// using UnityEngine;
-// using TMPro;
-
-// public class ColetaveisManager : MonoBehaviour
-// {
-//     public static ColetaveisManager instance;
-
-//     [Header("UI dos Contadores")]
-//     [SerializeField] private TextMeshProUGUI cristalText;
-//     [SerializeField] private TextMeshProUGUI moedaText;
-
-//     [Header("Configuração da Chave e Porta")]
-//     [SerializeField] private GameObject chavePrefab;
-//     [SerializeField] private PortaController porta;
-//     [SerializeField] private Transform pontoSpawnChave;
-
-//     private int cristalCount = 0;
-//     private int moedaCount = 0;
-//     private int totalColetaveisNaCena = 0;
-//     private int totalColetados = 0;
-//     private bool chaveCriada = false; // Trava para evitar spawn duplo
-
-//     private void Awake()
-//     {
-//         if (instance == null)
-//         {
-//             instance = this;
-//         }
-//         else
-//         {
-//             Destroy(gameObject);
-//         }
-//     }
-
-//     private void Start()
-//     {
-//         totalColetaveisNaCena = FindObjectsByType<ItemColetavel>(FindObjectsSortMode.None).Length;
-//         UpdateUI();
-//     }
-
-//     public void AddCristal()
-//     {
-//         cristalCount++;
-//         totalColetados++;
-//         UpdateUI();
-//         VerificarConclusao();
-//     }
-
-//     public void AddMoeda()
-//     {
-//         moedaCount++;
-//         totalColetados++;
-//         UpdateUI();
-//         VerificarConclusao();
-//     }
-
-//     private void VerificarConclusao()
-//     {
-//         if (!chaveCriada && totalColetados >= totalColetaveisNaCena && totalColetaveisNaCena > 0)
-//         {
-//             chaveCriada = true; // Garante que só executa uma vez
-//             ChamarChaveVoadora();
-//         }
-//     }
-
-//     // private void ChamarChaveVoadora()
-//     // {
-//     //     if (chavePrefab != null && porta != null)
-//     //     {
-//     //         Vector3 posicaoSpawn = pontoSpawnChave != null ? pontoSpawnChave.position : transform.position;
-//     //         GameObject chaveObj = Instantiate(chavePrefab, posicaoSpawn, Quaternion.identity);
-            
-//     //         ChaveVoadora chave = chaveObj.GetComponent<ChaveVoadora>();
-//     //         if (chave != null)
-//     //         {
-//     //             chave.IniciarVoo(porta.PontoFechadura, porta);
-//     //         }
-//     //     }
-//     // }
-
-//     private void ChamarChaveVoadora()
-// {
-//     if (chavePrefab != null && porta != null)
-//     {
-//         Vector3 posicaoSpawn = pontoSpawnChave != null ? pontoSpawnChave.position : transform.position;
-//         GameObject chaveObj = Instantiate(chavePrefab, posicaoSpawn, Quaternion.identity);
-        
-//         ChaveColetavel chave = chaveObj.GetComponent<ChaveColetavel>();
-//         if (chave != null)
-//         {
-//             chave.ConfigurarChave(porta);
-//         }
-//     }
-// }
-
-//     private void UpdateUI()
-//     {
-//         if (cristalText != null) cristalText.text = cristalCount.ToString();
-//         if (moedaText != null) moedaText.text = moedaCount.ToString();
-//     }
-// }
-
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -109,6 +6,10 @@ public class ColetaveisManager : MonoBehaviour
 {
     public static ColetaveisManager Instance { get; private set; }
     public static ColetaveisManager instance => Instance;
+
+    // Adicione no ColetaveisManager.cs
+    public static int TotalCristaisGlobal => totalCristaisGlobal;
+    public static int TotalMoedasGlobal => totalMoedasGlobal;
 
     [Header("UI dos Contadores na Prancheta")]
     [SerializeField] private TextMeshProUGUI cristalText;
@@ -203,7 +104,7 @@ public class ColetaveisManager : MonoBehaviour
     //     UpdateUI();
     //     VerificarConclusao();
     // }
-public void AddCristal()
+    public void AddCristal()
     {
         totalCristaisGlobal++;
         coletadosNaCenaAtual++;

@@ -78,6 +78,16 @@ public class Player : MonoBehaviour
     public bool DeathAnim { get => deathAnim; set => deathAnim = value; }
     public bool IsDashing => isDashing;
 
+
+    private void Start()
+    {
+        // Se o jogador já tinha tomado dano nas fases anteriores, 
+        // atualiza os corações da tela logo no início do nível!
+        if (hitsReceived > 0 && healthUI != null)
+        {
+            healthUI.UpdateHealthUI(hitsReceived);
+        }
+    }
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();

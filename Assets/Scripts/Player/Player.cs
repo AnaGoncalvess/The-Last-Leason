@@ -401,4 +401,12 @@ public class Player : MonoBehaviour
             Gizmos.DrawWireSphere(point.position, radius);
         }
     }
+
+    // Adicione esta função pública dentro da classe Player.cs
+    public static void ResetHealth()
+    {
+        hitsReceived = 0;
+    }
+
+
 }

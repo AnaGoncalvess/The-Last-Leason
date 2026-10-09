@@ -381,6 +381,8 @@ public class Caderno : MonoBehaviour
     private bool isTakingHit;
     private bool isAttacking;
 
+    private bool estaVisivelNaTela = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -418,42 +420,100 @@ public class Caderno : MonoBehaviour
         IAController();
     }
 
-    private void IAController()
+    // private void IAController()
+    // {
+    //     // 1. Sempre vira a sprite para encarar o Player quando não estiver no meio da animação de ataque
+    //     if (!isAttacking)
+    //     {
+    //         LookAtPlayer();
+    //     }
+
+    //     float distance = Vector2.Distance(transform.position, player.position);
+
+    //     // 2. Se estiver no meio do ataque, mantém parado
+    //     if (isAttacking)
+    //     {
+    //         rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+    //         return;
+    //     }
+
+    //     // 3. Fora de visão: Idle
+    //     if (distance > maxVision)
+    //     {
+    //         Idle();
+    //         return;
+    //     }
+
+    //     // 4. Dentro da visão, mas fora do alcance de ataque: Persegue
+    //     if (distance > attackDistance)
+    //     {
+    //         ChasePlayer();
+    //     }
+    //     // 5. No alcance de ataque: Ataca mantendo a distância configurada
+    //     else
+    //     {
+    //         Attack();
+    //     }
+    // }
+
+private void IAController()
     {
-        // 1. Sempre vira a sprite para encarar o Player quando não estiver no meio da animação de ataque
+        // 1. Sempre vira a sprite para encarar o Player quando não estiver atacando
         if (!isAttacking)
         {
             LookAtPlayer();
         }
 
+        // Se o Caderno NÃO estiver visível na câmera do jogador, ele permanece em descanso (Idle)
+        if (!estaVisivelNaTela)
+        {
+            Idle();
+            return;
+        }
+
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // 2. Se estiver no meio do ataque, mantém parado
+        // 2. Se estiver no meio da animação de ataque, mantém parado
         if (isAttacking)
         {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             return;
         }
 
-        // 3. Fora de visão: Idle
+        // 3. Fora do raio de visão: Idle
         if (distance > maxVision)
         {
             Idle();
             return;
         }
 
-        // 4. Dentro da visão, mas fora do alcance de ataque: Persegue
+        // 4. Dentro do raio de visão, mas longe para atacar: Persegue
         if (distance > attackDistance)
         {
             ChasePlayer();
         }
-        // 5. No alcance de ataque: Ataca mantendo a distância configurada
+        // 5. No alcance de ataque: Ataca apenas se estiver na tela
         else
         {
             Attack();
         }
     }
 
+    private void Attack()
+    {
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+
+        // Só inicia a rotina de ataque se já estiver visível para o jogador
+        if (Time.time >= nextAttackTime && !isAttacking && estaVisivelNaTela)
+        {
+            StartCoroutine(AttackRoutine());
+        }
+        else
+        {
+            SetTransition(0);
+        }
+    }
+    
     private void LookAtPlayer()
     {
         // Vira para a direita se o Player estiver à direita; para a esquerda se estiver à esquerda
@@ -481,19 +541,19 @@ public class Caderno : MonoBehaviour
         SetTransition(1);
     }
 
-    private void Attack()
-    {
-        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+    // private void Attack()
+    // {
+    //     rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
 
-        if (Time.time >= nextAttackTime && !isAttacking)
-        {
-            StartCoroutine(AttackRoutine());
-        }
-        else
-        {
-            SetTransition(0);
-        }
-    }
+    //     if (Time.time >= nextAttackTime && !isAttacking)
+    //     {
+    //         StartCoroutine(AttackRoutine());
+    //     }
+    //     else
+    //     {
+    //         SetTransition(0);
+    //     }
+    // }
 
     private IEnumerator AttackRoutine()
     {
@@ -574,7 +634,7 @@ public class Caderno : MonoBehaviour
         PlaySfx(deathSfx);
         CameraTargetController.Shake(0.08f, 0.12f);
 
-         if (dropsCristal && cristalPrefab != null)
+        if (dropsCristal && cristalPrefab != null)
         {
             Instantiate(cristalPrefab, transform.position, Quaternion.identity);
         }
@@ -584,7 +644,7 @@ public class Caderno : MonoBehaviour
 
         Destroy(gameObject, 2f);
     }
-       
+
 
     private void PlaySfx(AudioClip clip)
     {
@@ -605,4 +665,16 @@ public class Caderno : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackDistance);
     }
+
+    private void OnBecameVisible()
+    {
+        estaVisivelNaTela = true;
+    }
+
+    private void OnBecameInvisible()
+    {
+        estaVisivelNaTela = false;
+    }
+
+
 }

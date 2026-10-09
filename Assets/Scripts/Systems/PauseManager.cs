@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement; // <- ADICIONE ESTA LINHA NO TOPO
 
 /// <summary>
 /// Singleton de pausa que se auto-instancia. Aperte "Cancel" (Esc / joystick 1) para
@@ -29,6 +30,8 @@ public class PauseManager : MonoBehaviour
     public bool IsPaused { get; private set; }
 
     [SerializeField] private GameObject pausePanel; // opcional: painel de UI a ativar/desativar
+
+    [SerializeField] private string mainMenuSceneName = "Tela-inicial"; // Ajuste o nome da cena conforme seu projeto
 
     private void Awake()
     {
@@ -69,7 +72,13 @@ public class PauseManager : MonoBehaviour
 
     public void Resume()
     {
-        SetPaused(false);
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(false); // Esconde o painel
+        }
+
+        Time.timeScale = 1f; // Volta o tempo do jogo ao normal
+                             // isPaused = false;
     }
 
     public void SetPaused(bool paused)
@@ -83,5 +92,35 @@ public class PauseManager : MonoBehaviour
         }
 
         OnPauseChanged?.Invoke(paused);
+    }
+
+    public void RestartGame()
+{
+    // 1. Restaura o tempo do jogo (para despausar)
+    Time.timeScale = 1f;
+
+    // 2. Reseta o progresso global dos coletáveis (Cristais e Lâmpadas)
+    ColetaveisManager.ResetarProgressoGlobal();
+
+    // 3. Reseta a vida perdida do jogador
+    Player.ResetHealth();
+
+    // 4. Recarrega a fase atual ou volta para o Nível 1
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+}
+
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1f; // Restaura a velocidade do jogo
+        SceneManager.LoadScene(mainMenuSceneName);
+    }
+
+    public void ResumeGame()
+    {
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(false);
+        }
+        Time.timeScale = 1f; // Restaura a velocidade do jogo
     }
 }

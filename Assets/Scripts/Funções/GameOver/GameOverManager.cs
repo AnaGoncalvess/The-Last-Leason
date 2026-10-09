@@ -110,13 +110,27 @@ public class GameOverManager : MonoBehaviour
         }
     }
 
+    // public void RestartGame()
+    // {
+    //     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    // }
+
+    // public void GoToMainMenu()
+    // {
+    //     SceneManager.LoadScene(mainMenuSceneName);
+    // }
+
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f; // Restaura a velocidade do jogo
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void GoToMainMenu()
     {
+        Time.timeScale = 1f; // Restaura a velocidade do jogo
         SceneManager.LoadScene(mainMenuSceneName);
     }
+
+
 }

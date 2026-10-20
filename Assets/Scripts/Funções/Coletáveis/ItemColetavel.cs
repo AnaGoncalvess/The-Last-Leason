@@ -4,27 +4,53 @@ public class ItemColetavel : MonoBehaviour
 {
     public enum TipoItem { Cristal, Moeda }
 
+    [SerializeField] private AudioClip somColetavel;
     [Header("Tipo do Coletável")]
     [SerializeField] private TipoItem tipo = TipoItem.Moeda;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // 1. Teste de Colisão
-        Debug.Log($"[DIAGNÓSTICO] Objeto '{gameObject.name}' foi tocado por: '{collision.gameObject.name}' (Tag: '{collision.tag}')");
 
-        bool ePlayer = collision.CompareTag("Player") || 
+
+    Debug.Log($"Colidiu com: {collision.gameObject.name} | Tag: {collision.tag}");
+
+    if (collision.CompareTag("Player"))
+    {
+        if (somColetavel == null)
+        {
+            Debug.LogWarning("O somColetavel está VAZIO no Inspector!");
+        }
+
+        if (AudioManager.Instance != null && somColetavel != null)
+        {
+            AudioManager.Instance.PlaySfxWithDucking(somColetavel, 0.2f, 0.5f);
+        }
+
+        Destroy(gameObject);
+    }
+
+
+        bool ePlayer = collision.CompareTag("Player") ||
                       collision.gameObject.name.ToLower().Contains("player") ||
                       (collision.attachedRigidbody != null && collision.attachedRigidbody.CompareTag("Player"));
 
         if (ePlayer)
         {
-            Debug.Log($"[DIAGNÓSTICO] Player reconhecido com sucesso no item '{gameObject.name}'!");
             Coletar();
         }
-        else
+        
+        if (collision.CompareTag("Player"))
         {
-            Debug.LogWarning($"[DIAGNÓSTICO] O objeto '{collision.gameObject.name}' tocou no item, mas NÃO foi reconhecido como Player.");
+            // Toca o som baixando temporariamente a música de fundo
+            if (AudioManager.Instance != null && somColetavel != null)
+            {
+                AudioManager.Instance.PlaySfxWithDucking(somColetavel, 0.2f, 0.5f);
+            }
+
+            Destroy(gameObject);
         }
+
+
     }
 
     private void Coletar()
@@ -33,7 +59,7 @@ public class ItemColetavel : MonoBehaviour
 
         if (manager != null)
         {
-            
+
             if (tipo == TipoItem.Cristal)
             {
                 manager.AddCristal();

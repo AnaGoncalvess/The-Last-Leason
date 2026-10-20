@@ -28,6 +28,12 @@ public class ColetaveisManager : MonoBehaviour
     private int coletadosNaCenaAtual = 0;
     private bool chaveCriada = false;
 
+    // Dentro do ColetaveisManager.cs
+private void Start()
+{
+    AtualizarTextoUI(); // Força a UI a mostrar 0 assim que o nível inicia
+}
+
     private void Awake()
     {
         if (Instance == null)
@@ -197,4 +203,22 @@ public class ColetaveisManager : MonoBehaviour
         totalCristaisGlobal = 0;
         totalMoedasGlobal = 0;
     }
+
+    // // No ColetaveisManager.cs
+    // public static void ResetarProgressoGlobal()
+    // {
+    //     // Reseta as variáveis estáticas de cristais e lâmpadas
+    //     pontosTotais = 0;
+    //     lampadasTotais = 0;
+    // }
+
+    private void AtualizarTextoUI()
+{
+    // Adicione a atualização do texto do seu Canvas aqui se houver
+}
+
+public void NotificarNovoItemNaCena()
+{
+    coletaveisNaCenaAtual++;
+}
 }

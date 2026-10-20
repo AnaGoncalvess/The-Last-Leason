@@ -403,9 +403,10 @@ public class Player : MonoBehaviour
     }
 
     // Adicione esta função pública dentro da classe Player.cs
+    // No Player.cs
     public static void ResetHealth()
     {
-        hitsReceived = 0;
+        hitsReceived = 0; // Reseta os danos recebidos acumulados
     }
 
 

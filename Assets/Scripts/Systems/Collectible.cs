@@ -9,6 +9,7 @@ public class Collectible : MonoBehaviour
 {
     [SerializeField] private int scoreValue = 1;
     [SerializeField] private AudioClip pickupSfx;
+    [SerializeField] private AudioClip somColetavel;
 
     private void Reset()
     {

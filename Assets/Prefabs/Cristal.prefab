@@ -179,6 +179,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b3ab895cb55284e8e8089b006a7747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemColetavel
+  somColetavel: {fileID: 8300000, guid: f0fa0bad5685af4488d6ff43cc6c1666, type: 3}
   tipo: 0
-  amplitude: 0.15
-  velocidade: 2.5

@@ -51,6 +51,11 @@ public class PortaController : MonoBehaviour
                 3f * Time.deltaTime
             );
         }
+
+        // if (lampadasColetadas >= totalLampadas && cristaisColetados >= totalCristais)
+        // {
+        //     AtivarChave();
+        // }
     }
 
     private IEnumerator RotinaTransicaoNivel()
@@ -58,4 +63,6 @@ public class PortaController : MonoBehaviour
         yield return new WaitForSeconds(1.0f); // Aguarda a animação e o alinhamento
         SceneManager.LoadScene(proximaCenaName); // Carrega o próximo nível
     }
+
+
 }

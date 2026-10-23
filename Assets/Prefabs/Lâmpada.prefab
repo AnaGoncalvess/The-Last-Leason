@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b3ab895cb55284e8e8089b006a7747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemColetavel
-  somColetavel: {fileID: 0}
+  somColetavel: {fileID: 8300000, guid: 43f6d247c0d431944bed3db3daa6a3fd, type: 3}
   tipo: 1
 --- !u!61 &819456117935115829
 BoxCollider2D:

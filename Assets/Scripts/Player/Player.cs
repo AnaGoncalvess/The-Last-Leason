@@ -79,6 +79,10 @@ public class Player : MonoBehaviour
     public bool IsDashing => isDashing;
 
 
+    [Header("Configurações de Vida do Player")]
+    [SerializeField] private float vidaMaxima = 100f;
+    [SerializeField] private float vidaAtual;
+
     private void Start()
     {
         // Se o jogador já tinha tomado dano nas fases anteriores, 
@@ -87,6 +91,8 @@ public class Player : MonoBehaviour
         {
             healthUI.UpdateHealthUI(hitsReceived);
         }
+
+        vidaAtual = vidaMaxima;
     }
     private void Awake()
     {
@@ -410,4 +416,19 @@ public class Player : MonoBehaviour
     }
 
 
+    // Método chamado pelo ProjetilVeneno.cs quando o cuspo atinge o Player
+    public void TomarDano(float quantidade)
+    {
+        vidaAtual -= quantidade;
+        if (vidaAtual < 0) vidaAtual = 0;
+
+        Debug.Log($"Player tomou {quantidade} de dano! Vida restante: {vidaAtual}");
+
+        if (vidaAtual <= 0)
+        {
+            Die();
+        }
+    }
+
+   
 }

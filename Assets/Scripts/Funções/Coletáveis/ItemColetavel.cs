@@ -8,82 +8,29 @@
 //     [Header("Tipo do Coletável")]
 //     [SerializeField] private TipoItem tipo = TipoItem.Moeda;
 
-//     private void OnTriggerEnter2D(Collider2D collision)
-//     {
+//     [Header("Efeito de Flutuação (Mexer)")]
+//     [SerializeField] private bool flutuar = true;
+//     [SerializeField] private float velocidadeFlutuacao = 3f; // Velocidade do balanço
+//     [SerializeField] private float alturaFlutuacao = 0.15f;  // Amplitude do movimento
 
-
-//     Debug.Log($"Colidiu com: {collision.gameObject.name} | Tag: {collision.tag}");
-
-//     if (collision.CompareTag("Player"))
-//     {
-//         if (somColetavel == null)
-//         {
-//             Debug.LogWarning("O somColetavel está VAZIO no Inspector!");
-//         }
-
-//         if (AudioManager.Instance != null && somColetavel != null)
-//         {
-//             AudioManager.Instance.PlaySfxWithDucking(somColetavel, 0.2f, 0.5f);
-//         }
-
-//         Destroy(gameObject);
-//     }
-
-
-//         bool ePlayer = collision.CompareTag("Player") ||
-//                       collision.gameObject.name.ToLower().Contains("player") ||
-//                       (collision.attachedRigidbody != null && collision.attachedRigidbody.CompareTag("Player"));
-
-//         if (ePlayer)
-//         {
-//             Coletar();
-//         }
-        
-//         if (collision.CompareTag("Player"))
-//         {
-//             // Toca o som baixando temporariamente a música de fundo
-//             if (AudioManager.Instance != null && somColetavel != null)
-//             {
-//                 AudioManager.Instance.PlaySfxWithDucking(somColetavel, 0.2f, 0.5f);
-//             }
-
-//             Destroy(gameObject);
-//         }
-
-
-//     }
-
-//     private void Coletar()
-//     {
-//         ColetaveisManager manager = ColetaveisManager.Instance != null ? ColetaveisManager.Instance : FindFirstObjectByType<ColetaveisManager>();
-
-//         if (manager != null)
-//         {
-
-//             if (tipo == TipoItem.Cristal)
-//             {
-//                 manager.AddCristal();
-//             }
-//             else
-//             {
-//                 manager.AddMoeda();
-//             }
-//             Destroy(gameObject);
-//         }
-//     }
-// }
-
-// using UnityEngine;
-
-// public class ItemColetavel : MonoBehaviour
-// {
-//     public enum TipoItem { Cristal, Moeda }
-
-//     [SerializeField] private AudioClip somColetavel;
-//     [Header("Tipo do Coletável")]
-//     [SerializeField] private TipoItem tipo = TipoItem.Moeda;
-
+//     private Vector3 posicaoInicial;
 //     private bool jaColetado = false;
+
+//     private void Start()
+//     {
+//         // Salva a posição original onde o item foi colocado na cena
+//         posicaoInicial = transform.position;
+//     }
+
+//     private void Update()
+//     {
+//         // Faz o item subir e descer suavemente em loop
+//         if (flutuar && !jaColetado)
+//         {
+//             float novoY = posicaoInicial.y + Mathf.Sin(Time.time * velocidadeFlutuacao) * alturaFlutuacao;
+//             transform.position = new Vector3(posicaoInicial.x, novoY, posicaoInicial.z);
+//         }
+//     }
 
 //     private void OnTriggerEnter2D(Collider2D collision)
 //     {
@@ -97,13 +44,13 @@
 //         {
 //             jaColetado = true;
 
-//             // 1. Toca o som com Ducking
+//             // 1. Toca o som com Ducking na música
 //             if (AudioManager.Instance != null && somColetavel != null)
 //             {
 //                 AudioManager.Instance.PlaySfxWithDucking(somColetavel, 0.2f, 0.5f);
 //             }
 
-//             // 2. Incrementa o contador no Manager
+//             // 2. Incrementa a contagem no ColetaveisManager
 //             Coletar();
 //         }
 //     }
@@ -132,13 +79,35 @@ using UnityEngine;
 
 public class ItemColetavel : MonoBehaviour
 {
-    public enum TipoItem { Cristal, Moeda }
+    public enum TipoItem { Cristal, Moeda, Chave }
 
     [SerializeField] private AudioClip somColetavel;
     [Header("Tipo do Coletável")]
     [SerializeField] private TipoItem tipo = TipoItem.Moeda;
 
+    [Header("Efeito de Flutuação (Mexer)")]
+    [SerializeField] private bool flutuar = true;
+    [SerializeField] private float velocidadeFlutuacao = 3f; // Velocidade do balanço
+    [SerializeField] private float alturaFlutuacao = 0.15f;  // Amplitude do movimento
+
+    private Vector3 posicaoInicial;
     private bool jaColetado = false;
+
+    private void Start()
+    {
+        // Salva a posição original onde o item foi colocado na cena
+        posicaoInicial = transform.position;
+    }
+
+    private void Update()
+    {
+        // Faz o item subir e descer suavemente em loop
+        if (flutuar && !jaColetado)
+        {
+            float novoY = posicaoInicial.y + Mathf.Sin(Time.time * velocidadeFlutuacao) * alturaFlutuacao;
+            transform.position = new Vector3(posicaoInicial.x, novoY, posicaoInicial.z);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -152,30 +121,46 @@ public class ItemColetavel : MonoBehaviour
         {
             jaColetado = true;
 
-            // 1. Toca o som com efeito Ducking na música
+            // 1. Toca o som com Ducking na música
             if (AudioManager.Instance != null && somColetavel != null)
             {
                 AudioManager.Instance.PlaySfxWithDucking(somColetavel, 0.2f, 0.5f);
             }
 
-            // 2. Incrementa o contador no Manager e se destrói
+            // 2. Incrementa a contagem ou ativa a chave
             Coletar();
         }
     }
 
     private void Coletar()
     {
-        ColetaveisManager manager = ColetaveisManager.Instance != null ? ColetaveisManager.Instance : FindFirstObjectByType<ColetaveisManager>();
-
-        if (manager != null)
+        if (tipo == TipoItem.Chave)
         {
-            if (tipo == TipoItem.Cristal)
+            // Busca o componente LevelExitCheck anexado ao PontoFechadura
+            LevelExitCheck fechadura = FindFirstObjectByType<LevelExitCheck>();
+            if (fechadura != null)
             {
-                manager.AddCristal();
+                fechadura.ColetarChave();
             }
             else
             {
-                manager.AddMoeda();
+                Debug.LogWarning("Chave coletada, mas nenhum LevelExitCheck (PontoFechadura) foi encontrado na cena!");
+            }
+        }
+        else
+        {
+            ColetaveisManager manager = ColetaveisManager.Instance != null ? ColetaveisManager.Instance : FindFirstObjectByType<ColetaveisManager>();
+
+            if (manager != null)
+            {
+                if (tipo == TipoItem.Cristal)
+                {
+                    manager.AddCristal();
+                }
+                else if (tipo == TipoItem.Moeda)
+                {
+                    manager.AddMoeda();
+                }
             }
         }
 

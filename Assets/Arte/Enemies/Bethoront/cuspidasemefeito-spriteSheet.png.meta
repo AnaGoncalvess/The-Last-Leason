@@ -1,181 +1,64 @@
 fileFormatVersion: 2
-guid: 3b38de47907137b4590e7ed118995bc1
+guid: bca169322bd851648a7d0528d9e1e2cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8410930059285442570
-    second: cuspida-spriteSheet_0
+      213: -8171494739351342400
+    second: cuspidasemefeito-spriteSheet_0
   - first:
-      213: -6377146223422122000
-    second: cuspida-spriteSheet_1
+      213: 8120986745456520477
+    second: cuspidasemefeito-spriteSheet_1
   - first:
-      213: -3226423156549240479
-    second: cuspida-spriteSheet_2
+      213: 659817705624638589
+    second: cuspidasemefeito-spriteSheet_2
   - first:
-      213: 7075144837758165444
-    second: cuspida-spriteSheet_3
+      213: 6588235236434098366
+    second: cuspidasemefeito-spriteSheet_3
   - first:
-      213: 8203780397497037516
-    second: cuspida-spriteSheet_4
+      213: -254708757216471011
+    second: cuspidasemefeito-spriteSheet_4
   - first:
-      213: -8904805648220113254
-    second: cuspida-spriteSheet_5
+      213: 8031873780369120046
+    second: cuspidasemefeito-spriteSheet_5
   - first:
-      213: -757094443312607674
-    second: cuspida-spriteSheet_6
+      213: 3818527305090122988
+    second: cuspidasemefeito-spriteSheet_6
   - first:
-      213: 7780804685270009355
-    second: cuspida-spriteSheet_7
+      213: 8582724862774259509
+    second: cuspidasemefeito-spriteSheet_7
   - first:
-      213: 8300707323448578010
-    second: cuspida-spriteSheet_8
+      213: -2131387249105883016
+    second: cuspidasemefeito-spriteSheet_8
   - first:
-      213: -1767137180975103654
-    second: cuspida-spriteSheet_9
+      213: -7512273347100885721
+    second: cuspidasemefeito-spriteSheet_9
   - first:
-      213: -8132563038215192070
-    second: cuspida-spriteSheet_10
+      213: 4777797343137706177
+    second: cuspidasemefeito-spriteSheet_10
   - first:
-      213: -4108211534651326587
-    second: cuspida-spriteSheet_11
+      213: 6037341103155680951
+    second: cuspidasemefeito-spriteSheet_11
   - first:
-      213: 2078959090116850268
-    second: cuspida-spriteSheet_12
+      213: 3961332839163981711
+    second: cuspidasemefeito-spriteSheet_12
   - first:
-      213: -1717781288555434193
-    second: cuspida-spriteSheet_13
+      213: -6770973156898192044
+    second: cuspidasemefeito-spriteSheet_13
   - first:
-      213: 4572592257667939730
-    second: cuspida-spriteSheet_14
+      213: 897708768944251694
+    second: cuspidasemefeito-spriteSheet_14
   - first:
-      213: 640203449112959097
-    second: cuspida-spriteSheet_15
+      213: 6158142140734823642
+    second: cuspidasemefeito-spriteSheet_15
   - first:
-      213: 3285052638975922250
-    second: cuspida-spriteSheet_16
+      213: -1714817373964834008
+    second: cuspidasemefeito-spriteSheet_16
   - first:
-      213: 1104181299665169888
-    second: cuspida-spriteSheet_17
+      213: 6548072484340612854
+    second: cuspidasemefeito-spriteSheet_17
   - first:
-      213: 7515281677683816838
-    second: cuspida-spriteSheet_18
-  - first:
-      213: 5752207592522916663
-    second: cuspida-spriteSheet_19
-  - first:
-      213: -159246162355984490
-    second: cuspida-spriteSheet_20
-  - first:
-      213: -8361075977439355734
-    second: cuspida-spriteSheet_21
-  - first:
-      213: 3671944900556735325
-    second: cuspida-spriteSheet_22
-  - first:
-      213: 1602377747245734441
-    second: cuspida-spriteSheet_23
-  - first:
-      213: -4288051447364457929
-    second: cuspida-spriteSheet_24
-  - first:
-      213: -7455703130912791465
-    second: cuspida-spriteSheet_25
-  - first:
-      213: 7237527548665117602
-    second: cuspida-spriteSheet_26
-  - first:
-      213: -1673943076690620125
-    second: cuspida-spriteSheet_27
-  - first:
-      213: -974835748018921105
-    second: cuspida-spriteSheet_28
-  - first:
-      213: -5562309087014464789
-    second: cuspida-spriteSheet_29
-  - first:
-      213: -2769875056346953793
-    second: cuspida-spriteSheet_30
-  - first:
-      213: 6310840030515478885
-    second: cuspida-spriteSheet_31
-  - first:
-      213: 473862702625277696
-    second: cuspida-spriteSheet_32
-  - first:
-      213: 4539942511599857824
-    second: cuspida-spriteSheet_33
-  - first:
-      213: -8407949317759744565
-    second: cuspida-spriteSheet_34
-  - first:
-      213: 5750817561255320992
-    second: cuspida-spriteSheet_35
-  - first:
-      213: -3994725786011199450
-    second: cuspida-spriteSheet_36
-  - first:
-      213: -5177065652540009989
-    second: cuspida-spriteSheet_37
-  - first:
-      213: -2427162683653139562
-    second: cuspida-spriteSheet_38
-  - first:
-      213: 2847322075834202519
-    second: cuspida-spriteSheet_39
-  - first:
-      213: 6918467187532570030
-    second: cuspida-spriteSheet_40
-  - first:
-      213: 2750754218604882712
-    second: cuspida-spriteSheet_41
-  - first:
-      213: 6662223918422853894
-    second: cuspida-spriteSheet_42
-  - first:
-      213: -7876391705598602471
-    second: cuspida-spriteSheet_43
-  - first:
-      213: 1111649524527206179
-    second: cuspida-spriteSheet_44
-  - first:
-      213: 6761139817418046176
-    second: cuspida-spriteSheet_45
-  - first:
-      213: 6741084642082941879
-    second: cuspida-spriteSheet_46
-  - first:
-      213: 367907239597107184
-    second: cuspida-spriteSheet_47
-  - first:
-      213: 6540151641244396388
-    second: cuspida-spriteSheet_48
-  - first:
-      213: -5638319630158416395
-    second: cuspida-spriteSheet_49
-  - first:
-      213: -5295610917391109585
-    second: cuspida-spriteSheet_50
-  - first:
-      213: 6310797982926783053
-    second: cuspida-spriteSheet_51
-  - first:
-      213: 6992705708466495617
-    second: cuspida-spriteSheet_52
-  - first:
-      213: 9162469828852810838
-    second: cuspida-spriteSheet_53
-  - first:
-      213: 8606556556641908150
-    second: cuspida-spriteSheet_54
-  - first:
-      213: -3179725665001022688
-    second: cuspida-spriteSheet_55
-  - first:
-      213: -4288288223276773395
-    second: cuspida-spriteSheet_56
-  - first:
-      213: 1405012068653451914
-    second: cuspida-spriteSheet_57
+      213: 8012645711850157525
+    second: cuspidasemefeito-spriteSheet_18
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -271,419 +154,419 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cuspida-spriteSheet_0
+      name: cuspidasemefeito-spriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a003d5e6350a9b470800000000000000
-      internalID: 8410930059285442570
+      spriteID: 0c27df834d4099e80800000000000000
+      internalID: -8171494739351342400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_1
+      name: cuspidasemefeito-spriteSheet_1
       rect:
         serializedVersion: 2
         x: 350
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f753302c43df77a0800000000000000
-      internalID: -6377146223422122000
+      spriteID: d1d679c0b6a83b070800000000000000
+      internalID: 8120986745456520477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_2
+      name: cuspidasemefeito-spriteSheet_2
       rect:
         serializedVersion: 2
         x: 700
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 169b9c2cb317933d0800000000000000
-      internalID: -3226423156549240479
+      spriteID: d74154815b4282900800000000000000
+      internalID: 659817705624638589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_3
+      name: cuspidasemefeito-spriteSheet_3
       rect:
         serializedVersion: 2
         x: 1050
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c1a3058eb6ff2260800000000000000
-      internalID: 7075144837758165444
+      spriteID: eb8bd54aa0d1e6b50800000000000000
+      internalID: 6588235236434098366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_4
+      name: cuspidasemefeito-spriteSheet_4
       rect:
         serializedVersion: 2
         x: 1400
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc2bf185ecea9d170800000000000000
-      internalID: 8203780397497037516
+      spriteID: d185eec1cb7177cf0800000000000000
+      internalID: -254708757216471011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_5
+      name: cuspidasemefeito-spriteSheet_5
       rect:
         serializedVersion: 2
         x: 1750
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a96b2ff4176cb6480800000000000000
-      internalID: -8904805648220113254
+      spriteID: e2bdca706a2f67f60800000000000000
+      internalID: 8031873780369120046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_6
+      name: cuspidasemefeito-spriteSheet_6
       rect:
         serializedVersion: 2
         x: 2100
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64e0ee47d924e75f0800000000000000
-      internalID: -757094443312607674
+      spriteID: ce4c6014a522ef430800000000000000
+      internalID: 3818527305090122988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_7
+      name: cuspidasemefeito-spriteSheet_7
       rect:
         serializedVersion: 2
         x: 2450
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b06c63403a8fafb60800000000000000
-      internalID: 7780804685270009355
+      spriteID: 53fa29a1ac6fb1770800000000000000
+      internalID: 8582724862774259509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_8
+      name: cuspidasemefeito-spriteSheet_8
       rect:
         serializedVersion: 2
         x: 2800
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adfc2a6e459023370800000000000000
-      internalID: 8300707323448578010
+      spriteID: 8703f3ae69acb62e0800000000000000
+      internalID: -2131387249105883016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_9
+      name: cuspidasemefeito-spriteSheet_9
       rect:
         serializedVersion: 2
         x: 3150
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a51089ab81ed977e0800000000000000
-      internalID: -1767137180975103654
+      spriteID: 72dba6a413b0fb790800000000000000
+      internalID: -7512273347100885721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_10
+      name: cuspidasemefeito-spriteSheet_10
       rect:
         serializedVersion: 2
         x: 3500
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af146b14105532f80800000000000000
-      internalID: -8132563038215192070
+      spriteID: 1c03786ae552e4240800000000000000
+      internalID: 4777797343137706177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_11
+      name: cuspidasemefeito-spriteSheet_11
       rect:
         serializedVersion: 2
         x: 3850
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58ff1fe1063bcf6c0800000000000000
-      internalID: -4108211534651326587
+      spriteID: 7b695710fb1f8c350800000000000000
+      internalID: 6037341103155680951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_12
+      name: cuspidasemefeito-spriteSheet_12
       rect:
         serializedVersion: 2
         x: 4200
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c52fbf41742f9dc10800000000000000
-      internalID: 2078959090116850268
+      spriteID: f8f657baa3b79f630800000000000000
+      internalID: 3961332839163981711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_13
+      name: cuspidasemefeito-spriteSheet_13
       rect:
         serializedVersion: 2
         x: 4550
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2f27dde4073928e0800000000000000
-      internalID: -1717781288555434193
+      spriteID: 455c067b9cba802a0800000000000000
+      internalID: -6770973156898192044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_14
+      name: cuspidasemefeito-spriteSheet_14
       rect:
         serializedVersion: 2
         x: 4900
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29dbff48e6c157f30800000000000000
-      internalID: 4572592257667939730
+      spriteID: e23ecac7e5d457c00800000000000000
+      internalID: 897708768944251694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_15
+      name: cuspidasemefeito-spriteSheet_15
       rect:
         serializedVersion: 2
         x: 5250
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9789b5025a572e800800000000000000
-      internalID: 640203449112959097
+      spriteID: adcdcd656ad167550800000000000000
+      internalID: 6158142140734823642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_16
+      name: cuspidasemefeito-spriteSheet_16
       rect:
         serializedVersion: 2
         x: 5600
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a409e9e58f9d69d20800000000000000
-      internalID: 3285052638975922250
+      spriteID: 82b68221faeb338e0800000000000000
+      internalID: -1714817373964834008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_17
+      name: cuspidasemefeito-spriteSheet_17
       rect:
         serializedVersion: 2
         x: 5950
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0edeb26ba07d25f00800000000000000
-      internalID: 1104181299665169888
+      spriteID: 6feb1a83b3d6fda50800000000000000
+      internalID: 6548072484340612854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cuspida-spriteSheet_18
+      name: cuspidasemefeito-spriteSheet_18
       rect:
         serializedVersion: 2
         x: 6300
         y: 0
         width: 350
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68978514ed4ab4860800000000000000
-      internalID: 7515281677683816838
+      spriteID: 5d5b2e572d2a23f60800000000000000
+      internalID: 8012645711850157525
       vertices: []
       indices: 
       edges: []
@@ -692,7 +575,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a9b79945659ce9a4bb50d50b2c451be0
+    spriteID: dc642b6956395e44591b2bce11ab1b27
     internalID: 0
     vertices: []
     indices: 
@@ -702,27 +585,27 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":350.0,"y":100.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":350.0,"y":100.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":1.0,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":8,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      cuspida-spriteSheet_0: 8410930059285442570
-      cuspida-spriteSheet_1: -6377146223422122000
-      cuspida-spriteSheet_10: -8132563038215192070
-      cuspida-spriteSheet_11: -4108211534651326587
-      cuspida-spriteSheet_12: 2078959090116850268
-      cuspida-spriteSheet_13: -1717781288555434193
-      cuspida-spriteSheet_14: 4572592257667939730
-      cuspida-spriteSheet_15: 640203449112959097
-      cuspida-spriteSheet_16: 3285052638975922250
-      cuspida-spriteSheet_17: 1104181299665169888
-      cuspida-spriteSheet_18: 7515281677683816838
-      cuspida-spriteSheet_2: -3226423156549240479
-      cuspida-spriteSheet_3: 7075144837758165444
-      cuspida-spriteSheet_4: 8203780397497037516
-      cuspida-spriteSheet_5: -8904805648220113254
-      cuspida-spriteSheet_6: -757094443312607674
-      cuspida-spriteSheet_7: 7780804685270009355
-      cuspida-spriteSheet_8: 8300707323448578010
-      cuspida-spriteSheet_9: -1767137180975103654
+      cuspidasemefeito-spriteSheet_0: -8171494739351342400
+      cuspidasemefeito-spriteSheet_1: 8120986745456520477
+      cuspidasemefeito-spriteSheet_10: 4777797343137706177
+      cuspidasemefeito-spriteSheet_11: 6037341103155680951
+      cuspidasemefeito-spriteSheet_12: 3961332839163981711
+      cuspidasemefeito-spriteSheet_13: -6770973156898192044
+      cuspidasemefeito-spriteSheet_14: 897708768944251694
+      cuspidasemefeito-spriteSheet_15: 6158142140734823642
+      cuspidasemefeito-spriteSheet_16: -1714817373964834008
+      cuspidasemefeito-spriteSheet_17: 6548072484340612854
+      cuspidasemefeito-spriteSheet_18: 8012645711850157525
+      cuspidasemefeito-spriteSheet_2: 659817705624638589
+      cuspidasemefeito-spriteSheet_3: 6588235236434098366
+      cuspidasemefeito-spriteSheet_4: -254708757216471011
+      cuspidasemefeito-spriteSheet_5: 8031873780369120046
+      cuspidasemefeito-spriteSheet_6: 3818527305090122988
+      cuspidasemefeito-spriteSheet_7: 8582724862774259509
+      cuspidasemefeito-spriteSheet_8: -2131387249105883016
+      cuspidasemefeito-spriteSheet_9: -7512273347100885721
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

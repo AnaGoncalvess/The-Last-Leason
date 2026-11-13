@@ -1,0 +1,1165 @@
+fileFormatVersion: 2
+guid: baecaf5070fbf47418cce66164af622b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2071467788932370566
+    second: morte-bethoront-spriteSheet_0
+  - first:
+      213: -7729683942252729284
+    second: morte-bethoront-spriteSheet_1
+  - first:
+      213: -4987978008579869290
+    second: morte-bethoront-spriteSheet_2
+  - first:
+      213: -8368812482318966188
+    second: morte-bethoront-spriteSheet_3
+  - first:
+      213: -3981907958725320488
+    second: morte-bethoront-spriteSheet_4
+  - first:
+      213: -5374871261619891373
+    second: morte-bethoront-spriteSheet_5
+  - first:
+      213: -1967569895619156086
+    second: morte-bethoront-spriteSheet_6
+  - first:
+      213: -5364949636920004626
+    second: morte-bethoront-spriteSheet_7
+  - first:
+      213: 6435829958150158326
+    second: morte-bethoront-spriteSheet_8
+  - first:
+      213: 764029797789373018
+    second: morte-bethoront-spriteSheet_9
+  - first:
+      213: 8771725714657995137
+    second: morte-bethoront-spriteSheet_10
+  - first:
+      213: -3190393521235163720
+    second: morte-bethoront-spriteSheet_11
+  - first:
+      213: -7837073121655300794
+    second: morte-bethoront-spriteSheet_12
+  - first:
+      213: 5723365826266440794
+    second: morte-bethoront-spriteSheet_13
+  - first:
+      213: 6933105054303537101
+    second: morte-bethoront-spriteSheet_14
+  - first:
+      213: -2874116683467430172
+    second: morte-bethoront-spriteSheet_15
+  - first:
+      213: 4206305265601406042
+    second: morte-bethoront-spriteSheet_16
+  - first:
+      213: -5108337845294093487
+    second: morte-bethoront-spriteSheet_17
+  - first:
+      213: -2327535248952307119
+    second: morte-bethoront-spriteSheet_18
+  - first:
+      213: -8038643917948929636
+    second: morte-bethoront-spriteSheet_19
+  - first:
+      213: 4772290232711034033
+    second: morte-bethoront-spriteSheet_20
+  - first:
+      213: -7888652942803828416
+    second: morte-bethoront-spriteSheet_21
+  - first:
+      213: 7621850230284901076
+    second: morte-bethoront-spriteSheet_22
+  - first:
+      213: -2805788237787015100
+    second: morte-bethoront-spriteSheet_23
+  - first:
+      213: 2416773393107367709
+    second: morte-bethoront-spriteSheet_24
+  - first:
+      213: -4023811368006321261
+    second: morte-bethoront-spriteSheet_25
+  - first:
+      213: 1802147736722396328
+    second: morte-bethoront-spriteSheet_26
+  - first:
+      213: -2787103680997964267
+    second: morte-bethoront-spriteSheet_27
+  - first:
+      213: 5086978618052336081
+    second: morte-bethoront-spriteSheet_28
+  - first:
+      213: 5526283772088594814
+    second: morte-bethoront-spriteSheet_29
+  - first:
+      213: -6071870123321070816
+    second: morte-bethoront-spriteSheet_30
+  - first:
+      213: 7959735149421914510
+    second: morte-bethoront-spriteSheet_31
+  - first:
+      213: 6806378554243962261
+    second: morte-bethoront-spriteSheet_32
+  - first:
+      213: -7777592309639757286
+    second: morte-bethoront-spriteSheet_33
+  - first:
+      213: 3939434433253649541
+    second: morte-bethoront-spriteSheet_34
+  - first:
+      213: -7354800536428208405
+    second: morte-bethoront-spriteSheet_35
+  - first:
+      213: 2069153482511172309
+    second: morte-bethoront-spriteSheet_36
+  - first:
+      213: 5204156103340225920
+    second: morte-bethoront-spriteSheet_37
+  - first:
+      213: -6209624102010180271
+    second: morte-bethoront-spriteSheet_38
+  - first:
+      213: -100919233180441645
+    second: morte-bethoront-spriteSheet_39
+  - first:
+      213: -6577569228520362088
+    second: morte-bethoront-spriteSheet_40
+  - first:
+      213: -3707382995005157269
+    second: morte-bethoront-spriteSheet_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6805afa9af45fbc10800000000000000
+      internalID: 2071467788932370566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c2cfb7865aab490800000000000000
+      internalID: -7729683942252729284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695f22bbd6427cab0800000000000000
+      internalID: -4987978008579869290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452e58f13610cdb80800000000000000
+      internalID: -8368812482318966188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d060effecb6db8c0800000000000000
+      internalID: -3981907958725320488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353d0b9901f9865b0800000000000000
+      internalID: -5374871261619891373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a872ed4ca99c1b4e0800000000000000
+      internalID: -1967569895619156086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eefa58ddabedb85b0800000000000000
+      internalID: -5364949636920004626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f77b5a9f39a05950800000000000000
+      internalID: 6435829958150158326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a529c079d016a9a00800000000000000
+      internalID: 764029797789373018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1896959101e6bb970800000000000000
+      internalID: 8771725714657995137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b50211fef179b3d0800000000000000
+      internalID: -3190393521235163720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d59f8b48f1d3390800000000000000
+      internalID: -7837073121655300794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54a83235ea7d6f40800000000000000
+      internalID: 5723365826266440794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc74a305056573060800000000000000
+      internalID: 6933105054303537101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e666e6aa161d18d0800000000000000
+      internalID: -2874116683467430172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54e6056a5ccf5a30800000000000000
+      internalID: 4206305265601406042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15baf8a7bc98b19b0800000000000000
+      internalID: -5108337845294093487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1525ffbd50fe2bfd0800000000000000
+      internalID: -2327535248952307119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 3230
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99bcca72fff07090800000000000000
+      internalID: -8038643917948929636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4bec59ea49a3240800000000000000
+      internalID: 4772290232711034033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04186d3c1ffd58290800000000000000
+      internalID: -7888652942803828416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da5c53f66046c960800000000000000
+      internalID: 7621850230284901076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 3910
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4485cb3a676df09d0800000000000000
+      internalID: -2805788237787015100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17b7cea89a1a8120800000000000000
+      internalID: 2416773393107367709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39bfdce31ec8828c0800000000000000
+      internalID: -4023811368006321261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 4420
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4dc1081d3820910800000000000000
+      internalID: 1802147736722396328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 4590
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516cee508f73259d0800000000000000
+      internalID: -2787103680997964267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d95405e914989640800000000000000
+      internalID: 5086978618052336081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71b85bafcd41bc40800000000000000
+      internalID: 5526283772088594814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02be3210b426cbba0800000000000000
+      internalID: -6071870123321070816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 5270
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89eb7722f8a67e60800000000000000
+      internalID: 7959735149421914510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5955c8cbb3d157e50800000000000000
+      internalID: 6806378554243962261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 5610
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12cc187001701490800000000000000
+      internalID: -7777592309639757286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 5780
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ca60abebeaba630800000000000000
+      internalID: 3939434433253649541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 5950
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee185821ef7ee990800000000000000
+      internalID: -7354800536428208405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d247d6212c17bc10800000000000000
+      internalID: 2069153482511172309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 6290
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08576473760e83840800000000000000
+      internalID: 5204156103340225920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 6460
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15daafa77cbf2d9a0800000000000000
+      internalID: -6209624102010180271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte-bethoront-spriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 6630
+        y: 0
+        width: 170
+        height: 120
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3664bfd76799ef0800000000000000
+      internalID: -100919233180441645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0bc53b3c93c062f4b8b106a100ad1bd9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":170.0,"y":120.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":1.0,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":8,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      morte-bethoront-spriteSheet_0: 2071467788932370566
+      morte-bethoront-spriteSheet_1: -7729683942252729284
+      morte-bethoront-spriteSheet_10: 8771725714657995137
+      morte-bethoront-spriteSheet_11: -3190393521235163720
+      morte-bethoront-spriteSheet_12: -7837073121655300794
+      morte-bethoront-spriteSheet_13: 5723365826266440794
+      morte-bethoront-spriteSheet_14: 6933105054303537101
+      morte-bethoront-spriteSheet_15: -2874116683467430172
+      morte-bethoront-spriteSheet_16: 4206305265601406042
+      morte-bethoront-spriteSheet_17: -5108337845294093487
+      morte-bethoront-spriteSheet_18: -2327535248952307119
+      morte-bethoront-spriteSheet_19: -8038643917948929636
+      morte-bethoront-spriteSheet_2: -4987978008579869290
+      morte-bethoront-spriteSheet_20: 4772290232711034033
+      morte-bethoront-spriteSheet_21: -7888652942803828416
+      morte-bethoront-spriteSheet_22: 7621850230284901076
+      morte-bethoront-spriteSheet_23: -2805788237787015100
+      morte-bethoront-spriteSheet_24: 2416773393107367709
+      morte-bethoront-spriteSheet_25: -4023811368006321261
+      morte-bethoront-spriteSheet_26: 1802147736722396328
+      morte-bethoront-spriteSheet_27: -2787103680997964267
+      morte-bethoront-spriteSheet_28: 5086978618052336081
+      morte-bethoront-spriteSheet_29: 5526283772088594814
+      morte-bethoront-spriteSheet_3: -8368812482318966188
+      morte-bethoront-spriteSheet_30: -6071870123321070816
+      morte-bethoront-spriteSheet_31: 7959735149421914510
+      morte-bethoront-spriteSheet_32: 6806378554243962261
+      morte-bethoront-spriteSheet_33: -7777592309639757286
+      morte-bethoront-spriteSheet_34: 3939434433253649541
+      morte-bethoront-spriteSheet_35: -7354800536428208405
+      morte-bethoront-spriteSheet_36: 2069153482511172309
+      morte-bethoront-spriteSheet_37: 5204156103340225920
+      morte-bethoront-spriteSheet_38: -6209624102010180271
+      morte-bethoront-spriteSheet_39: -100919233180441645
+      morte-bethoront-spriteSheet_4: -3981907958725320488
+      morte-bethoront-spriteSheet_5: -5374871261619891373
+      morte-bethoront-spriteSheet_6: -1967569895619156086
+      morte-bethoront-spriteSheet_7: -5364949636920004626
+      morte-bethoront-spriteSheet_8: 6435829958150158326
+      morte-bethoront-spriteSheet_9: 764029797789373018
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

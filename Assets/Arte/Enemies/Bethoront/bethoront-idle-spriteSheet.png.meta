@@ -128,16 +128,16 @@ TextureImporter:
         y: 0
         width: 105
         height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 17399b71dc69aa500800000000000000
-      internalID: 408304523840951153
+      spriteID: f6f26020fdedefc48a1c9dba2bbae1b9
+      internalID: 2115419814
       vertices: []
       indices: 
       edges: []
@@ -150,16 +150,16 @@ TextureImporter:
         y: 0
         width: 105
         height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cf354a8d7b117e370800000000000000
-      internalID: 8351663515293209596
+      spriteID: 3ed0ba160a4f45f4fad41b356f89e7bb
+      internalID: -1152468814
       vertices: []
       indices: 
       edges: []
@@ -172,16 +172,16 @@ TextureImporter:
         y: 0
         width: 105
         height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 29d5976063ea440f0800000000000000
-      internalID: -1133589659130438254
+      spriteID: c26456ec504849a44bf9015bfabd3e1b
+      internalID: -592379214
       vertices: []
       indices: 
       edges: []
@@ -194,16 +194,16 @@ TextureImporter:
         y: 0
         width: 105
         height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c9fb7ec808d8335b0800000000000000
-      internalID: -5389808745773023332
+      spriteID: ee742f8d69cc5fa449ffa0bf9086efa1
+      internalID: -1430639603
       vertices: []
       indices: 
       edges: []
@@ -216,16 +216,16 @@ TextureImporter:
         y: 0
         width: 105
         height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7317348f56b1f6100800000000000000
-      internalID: 103331441223627063
+      spriteID: 85bf3375047ab9749a7e3a05824ab9b6
+      internalID: 1222666261
       vertices: []
       indices: 
       edges: []
@@ -238,16 +238,16 @@ TextureImporter:
         y: 0
         width: 105
         height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ad2f60f1c1a3a3200800000000000000
-      internalID: 160504629179118298
+      spriteID: 8c445e83232f04643a025a8eec84b220
+      internalID: 1178254707
       vertices: []
       indices: 
       edges: []
@@ -260,16 +260,16 @@ TextureImporter:
         y: 0
         width: 105
         height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d919c0ac43d1d34f0800000000000000
-      internalID: -847489042310458979
+      spriteID: b2d14d1b51a2ff74398c5b0d020b42d9
+      internalID: 302693837
       vertices: []
       indices: 
       edges: []
@@ -282,16 +282,16 @@ TextureImporter:
         y: 0
         width: 105
         height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: be801abe5186c3e40800000000000000
-      internalID: 5637495276917819627
+      spriteID: 96f16d20325b27a4389a1c1fde84546a
+      internalID: -1524431692
       vertices: []
       indices: 
       edges: []
@@ -310,16 +310,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":105.0,"y":85.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":105.0,"y":85.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":1.0,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":8,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      bethoront-idle-spriteSheet_0: 408304523840951153
-      bethoront-idle-spriteSheet_1: 8351663515293209596
-      bethoront-idle-spriteSheet_2: -1133589659130438254
-      bethoront-idle-spriteSheet_3: -5389808745773023332
-      bethoront-idle-spriteSheet_4: 103331441223627063
-      bethoront-idle-spriteSheet_5: 160504629179118298
-      bethoront-idle-spriteSheet_6: -847489042310458979
-      bethoront-idle-spriteSheet_7: 5637495276917819627
+      bethoront-idle-spriteSheet_0: 2115419814
+      bethoront-idle-spriteSheet_1: -1152468814
+      bethoront-idle-spriteSheet_2: -592379214
+      bethoront-idle-spriteSheet_3: -1430639603
+      bethoront-idle-spriteSheet_4: 1222666261
+      bethoront-idle-spriteSheet_5: 1178254707
+      bethoront-idle-spriteSheet_6: 302693837
+      bethoront-idle-spriteSheet_7: -1524431692
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

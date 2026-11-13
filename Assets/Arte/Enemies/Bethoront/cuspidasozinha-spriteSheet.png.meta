@@ -1,0 +1,642 @@
+fileFormatVersion: 2
+guid: e3c938f1c12270d46a656893c6f5f2d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6674824629162497356
+    second: cuspidasozinha-spriteSheet_0
+  - first:
+      213: 249346943450840842
+    second: cuspidasozinha-spriteSheet_1
+  - first:
+      213: 5518959502391947710
+    second: cuspidasozinha-spriteSheet_2
+  - first:
+      213: -3228403583650774842
+    second: cuspidasozinha-spriteSheet_3
+  - first:
+      213: -9012908427529102962
+    second: cuspidasozinha-spriteSheet_4
+  - first:
+      213: -5128280220218513419
+    second: cuspidasozinha-spriteSheet_5
+  - first:
+      213: 4467305843499809545
+    second: cuspidasozinha-spriteSheet_6
+  - first:
+      213: 7954941480374789229
+    second: cuspidasozinha-spriteSheet_7
+  - first:
+      213: -8770340284620964230
+    second: cuspidasozinha-spriteSheet_8
+  - first:
+      213: -7556353394976401099
+    second: cuspidasozinha-spriteSheet_9
+  - first:
+      213: -4545172354233881592
+    second: cuspidasozinha-spriteSheet_10
+  - first:
+      213: -2308983094717087354
+    second: cuspidasozinha-spriteSheet_11
+  - first:
+      213: 2706079701354333130
+    second: cuspidasozinha-spriteSheet_12
+  - first:
+      213: 7075376597301968396
+    second: cuspidasozinha-spriteSheet_13
+  - first:
+      213: 543697105716074850
+    second: cuspidasozinha-spriteSheet_14
+  - first:
+      213: 8897012266339498940
+    second: cuspidasozinha-spriteSheet_15
+  - first:
+      213: -797974184798440615
+    second: cuspidasozinha-spriteSheet_16
+  - first:
+      213: 6574257384090706727
+    second: cuspidasozinha-spriteSheet_17
+  - first:
+      213: -4956182647117571214
+    second: cuspidasozinha-spriteSheet_18
+  - first:
+      213: -6294552401011562710
+    second: cuspidasozinha-spriteSheet_19
+  - first:
+      213: -8645451663143339903
+    second: cuspidasozinha-spriteSheet_20
+  - first:
+      213: 1232306479271878265
+    second: cuspidasozinha-spriteSheet_21
+  - first:
+      213: -2230803681708929790
+    second: cuspidasozinha-spriteSheet_22
+  - first:
+      213: 7711035904704038035
+    second: cuspidasozinha-spriteSheet_23
+  - first:
+      213: -205547763030765162
+    second: cuspidasozinha-spriteSheet_24
+  - first:
+      213: -3862851930882657586
+    second: cuspidasozinha-spriteSheet_25
+  - first:
+      213: 5807870632771880275
+    second: cuspidasozinha-spriteSheet_26
+  - first:
+      213: 4440340768008015327
+    second: cuspidasozinha-spriteSheet_27
+  - first:
+      213: 1320027276016908240
+    second: cuspidasozinha-spriteSheet_28
+  - first:
+      213: -6173317964755364410
+    second: cuspidasozinha-spriteSheet_29
+  - first:
+      213: -7456610464506136507
+    second: cuspidasozinha-spriteSheet_30
+  - first:
+      213: -3918613422612714366
+    second: cuspidasozinha-spriteSheet_31
+  - first:
+      213: 3515199268383226233
+    second: cuspidasozinha-spriteSheet_32
+  - first:
+      213: 3434517647101398277
+    second: cuspidasozinha-spriteSheet_33
+  - first:
+      213: -4989608167187065842
+    second: cuspidasozinha-spriteSheet_34
+  - first:
+      213: -2362869323814746408
+    second: cuspidasozinha-spriteSheet_35
+  - first:
+      213: -2710290554096037794
+    second: cuspidasozinha-spriteSheet_36
+  - first:
+      213: 1975248603103775987
+    second: cuspidasozinha-spriteSheet_37
+  - first:
+      213: -3385641135970744639
+    second: cuspidasozinha-spriteSheet_38
+  - first:
+      213: -688309317900732045
+    second: cuspidasozinha-spriteSheet_39
+  - first:
+      213: -7281942521394835327
+    second: cuspidasozinha-spriteSheet_40
+  - first:
+      213: -1787195317382067035
+    second: cuspidasozinha-spriteSheet_41
+  - first:
+      213: -7754845788416960644
+    second: cuspidasozinha-spriteSheet_42
+  - first:
+      213: -7398939672768245647
+    second: cuspidasozinha-spriteSheet_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45524fa2adb1ac50800000000000000
+      internalID: 6674824629162497356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f773659bbd57300800000000000000
+      internalID: 249346943450840842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1b6dd3d68479c40800000000000000
+      internalID: 5518959502391947710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0c5e4ab086233d0800000000000000
+      internalID: -3228403583650774842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89d000a987bbe280800000000000000
+      internalID: -9012908427529102962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7a63d7f40b4d8b0800000000000000
+      internalID: -5128280220218513419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b35d0fefe0ffd30800000000000000
+      internalID: 4467305843499809545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6462ca1121a56e60800000000000000
+      internalID: 7954941480374789229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e7ed77afd794680800000000000000
+      internalID: -8770340284620964230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 3850
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5395d1f5f90722790800000000000000
+      internalID: -7556353394976401099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ca6fe33dd4ce0c0800000000000000
+      internalID: -4545172354233881592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 681810fdb18d4ffd0800000000000000
+      internalID: -2308983094717087354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 4900
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3ce15a62ded8520800000000000000
+      internalID: 2706079701354333130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ebb4e3789c03260800000000000000
+      internalID: 7075376597301968396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2695d9313a99b8700800000000000000
+      internalID: 543697105716074850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 5950
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb75719489887b70800000000000000
+      internalID: 8897012266339498940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspidasozinha-spriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953382fe4b60de4f0800000000000000
+      internalID: -797974184798440615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: db819c99b40ba1d4db5860918f74d2d3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":350.0,"y":100.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":1.0,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":8,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      cuspidasozinha-spriteSheet_0: 6674824629162497356
+      cuspidasozinha-spriteSheet_1: 249346943450840842
+      cuspidasozinha-spriteSheet_10: -4545172354233881592
+      cuspidasozinha-spriteSheet_11: -2308983094717087354
+      cuspidasozinha-spriteSheet_12: 2706079701354333130
+      cuspidasozinha-spriteSheet_13: 7075376597301968396
+      cuspidasozinha-spriteSheet_14: 543697105716074850
+      cuspidasozinha-spriteSheet_15: 8897012266339498940
+      cuspidasozinha-spriteSheet_16: -797974184798440615
+      cuspidasozinha-spriteSheet_2: 5518959502391947710
+      cuspidasozinha-spriteSheet_3: -3228403583650774842
+      cuspidasozinha-spriteSheet_4: -9012908427529102962
+      cuspidasozinha-spriteSheet_5: -5128280220218513419
+      cuspidasozinha-spriteSheet_6: 4467305843499809545
+      cuspidasozinha-spriteSheet_7: 7954941480374789229
+      cuspidasozinha-spriteSheet_8: -8770340284620964230
+      cuspidasozinha-spriteSheet_9: -7556353394976401099
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

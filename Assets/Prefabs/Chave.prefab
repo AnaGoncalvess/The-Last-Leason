@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5082793455366526780}
   - component: {fileID: 520120849914624822}
   - component: {fileID: 4590129114181180720}
-  - component: {fileID: -7183431162604984378}
+  - component: {fileID: 7545506414483096484}
   m_Layer: 9
   m_Name: Chave
   m_TagString: Untagged
@@ -167,7 +167,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-7183431162604984378
+--- !u!114 &7545506414483096484
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,6 +176,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 355009709983958503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0f7f6fbb57e9b14da052c7a292a4697, type: 3}
+  m_Script: {fileID: 11500000, guid: 42b3ab895cb55284e8e8089b006a7747, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChaveColetavel
+  m_EditorClassIdentifier: Assembly-CSharp::ItemColetavel
+  somColetavel: {fileID: 0}
+  tipo: 2
+  flutuar: 1
+  velocidadeFlutuacao: 3
+  alturaFlutuacao: 0.15

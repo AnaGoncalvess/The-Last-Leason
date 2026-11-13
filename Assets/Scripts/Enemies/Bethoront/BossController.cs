@@ -564,6 +564,8 @@ public class BossController : MonoBehaviour
         }
 
         if (colliderAtaque != null) colliderAtaque.enabled = false;
+
+        if (animator != null) animator.SetInteger("FaseAtual", faseAtual);
     }
 
     // private void Start()
@@ -755,6 +757,8 @@ public class BossController : MonoBehaviour
             if (animator != null) animator.SetTrigger("MudarFaseRabada");
             Debug.Log("Fase 3 (Rabada) ativada!");
         }
+
+        if (animator != null) animator.SetInteger("FaseAtual", faseAtual);
         else if (vidaAtualGolpes <= 0)
         {
             DerrotarBoss();

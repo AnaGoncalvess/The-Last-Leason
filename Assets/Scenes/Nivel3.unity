@@ -2203,7 +2203,7 @@ Transform:
   m_GameObject: {fileID: 642085129}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.411466, y: -0.39715165, z: -10}
+  m_LocalPosition: {x: -11.393392, y: -0.39715165, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2320,7 +2320,7 @@ Transform:
   m_GameObject: {fileID: 724049714}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11, y: 6.5, z: 0}
+  m_LocalPosition: {x: -11.96, y: 3.12, z: 0}
   m_LocalScale: {x: 2.1875, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2851,7 +2851,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 408304523840951153, guid: 35749e5686310754f9f70a7b6b329208, type: 3}
+  m_Sprite: {fileID: 2115419814, guid: 35749e5686310754f9f70a7b6b329208, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2859,7 +2859,7 @@ SpriteRenderer:
   m_Size: {x: 13.125, y: 10.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!4 &1050818814
 Transform:
@@ -2870,7 +2870,7 @@ Transform:
   m_GameObject: {fileID: 1050818808}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.4, y: -5.5, z: 0}
+  m_LocalPosition: {x: 1.39, y: -5.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3218,7 +3218,7 @@ Transform:
   m_GameObject: {fileID: 1220045901}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.3, y: 6.6, z: 0}
+  m_LocalPosition: {x: -4.57, y: 0.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3514,7 +3514,7 @@ Transform:
   m_GameObject: {fileID: 1340539887}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.411466, y: -0.39715165, z: -10}
+  m_LocalPosition: {x: -11.393392, y: -0.39715165, z: -10}
   m_LocalScale: {x: 4.015309, y: 4.015309, z: 4.015309}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4260,7 +4260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1590636520}
   - component: {fileID: 1590636519}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "Ch\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

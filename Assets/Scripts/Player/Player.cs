@@ -536,7 +536,7 @@
 //     [SerializeField] private float vidaAtual;
 
 
-    
+
 
 //     private void Start()
 //     {
@@ -960,6 +960,11 @@ public class Player : MonoBehaviour
     [SerializeField] private float vidaMaxima = 100f;
     [SerializeField] private float vidaAtual;
 
+    // [Header("Limites da Sala (Eixo X)")]
+    // [SerializeField] private bool usarLimitesMapa = false;
+    // [SerializeField] private float limiteMinX = -9f;
+    // [SerializeField] private float limiteMaxX = 9f;
+
     private void Start()
     {
         if (hitsReceived > 0 && healthUI != null)
@@ -1002,6 +1007,16 @@ public class Player : MonoBehaviour
 
         OnMove();
     }
+
+    // private void LateUpdate()
+    // {
+    //     if (usarLimitesMapa)
+    //     {
+    //         Vector3 pos = transform.position;
+    //         pos.x = Mathf.Clamp(pos.x, limiteMinX, limiteMaxX);
+    //         transform.position = pos;
+    //     }
+    // }
 
     private void OnMove()
     {
@@ -1111,6 +1126,37 @@ public class Player : MonoBehaviour
         }
     }
 
+    // private void StartAttack()
+    // {
+    //     attackAnim = true;
+    //     isAttacking = true;
+    //     nextAttackTime = Time.time + attackCooldown;
+
+    //     PlaySfx(attackSfx);
+
+    //     if (attackPoint != null)
+    //     {
+    //         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+
+    //         foreach (Collider2D hit in hits)
+    //         {
+    //             Caderno caderno = hit.GetComponentInParent<Caderno>();
+    //             if (caderno == null) caderno = hit.GetComponent<Caderno>();
+    //             if (caderno != null) caderno.TakeDamage(attackDamage);
+
+    //             BossController boss = hit.GetComponentInParent<BossController>();
+    //             if (boss == null) boss = hit.GetComponent<BossController>();
+    //             if (boss != null) boss.TomarDano(attackDamage);
+    //         }
+    //     }
+
+    //     PauloBossController paulo = hit.GetComponentInParent<PauloBossController>();
+    //             if (paulo == null) paulo = hit.GetComponent<PauloBossController>();
+    //             if (paulo != null) paulo.TomarDano(attackDamage);
+
+    //     StartCoroutine(ResetAttack());
+    // }
+
     private void StartAttack()
     {
         attackAnim = true;
@@ -1132,6 +1178,10 @@ public class Player : MonoBehaviour
                 BossController boss = hit.GetComponentInParent<BossController>();
                 if (boss == null) boss = hit.GetComponent<BossController>();
                 if (boss != null) boss.TomarDano(attackDamage);
+
+                PauloBossController paulo = hit.GetComponentInParent<PauloBossController>();
+                if (paulo == null) paulo = hit.GetComponent<PauloBossController>();
+                if (paulo != null) paulo.TomarDano(attackDamage);
             }
         }
 

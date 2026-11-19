@@ -1,0 +1,509 @@
+fileFormatVersion: 2
+guid: bb8f5ad760712df46b477a9b1f6b6a0e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6620491930595509143
+    second: PauloL2-Sheet_0
+  - first:
+      213: 1130922725364492797
+    second: PauloL2-Sheet_1
+  - first:
+      213: 1280583110691880798
+    second: PauloL2-Sheet_2
+  - first:
+      213: 5890226640644927704
+    second: PauloL2-Sheet_3
+  - first:
+      213: 408125801742423571
+    second: PauloL2-Sheet_4
+  - first:
+      213: 8727593349969186474
+    second: PauloL2-Sheet_5
+  - first:
+      213: -6702660367658868105
+    second: PauloL2-Sheet_6
+  - first:
+      213: 4163482742173785670
+    second: PauloL2-Sheet_7
+  - first:
+      213: 444595836042306911
+    second: PauloL2-Sheet_8
+  - first:
+      213: -1685498222175185559
+    second: PauloL2-Sheet_9
+  - first:
+      213: 1496867582540398626
+    second: PauloL2-Sheet_10
+  - first:
+      213: -7025182189520217467
+    second: PauloL2-Sheet_11
+  - first:
+      213: -3963624889575366515
+    second: PauloL2-Sheet_12
+  - first:
+      213: -8853177962532423926
+    second: PauloL2-Sheet_13
+  - first:
+      213: -2800533640227570128
+    second: PauloL2-Sheet_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 11
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PauloL2-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1
+        width: 20
+        height: 56
+      alignment: 9
+      pivot: {x: 0.6242584, y: 0.080740266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7934c718556b0eb50800000000000000
+      internalID: 6620491930595509143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1
+        width: 20
+        height: 56
+      alignment: 9
+      pivot: {x: 0.62549436, y: 0.080337174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df964c11a38d1bf00800000000000000
+      internalID: 1130922725364492797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1
+        width: 20
+        height: 56
+      alignment: 9
+      pivot: {x: 0.62416685, y: 0.08062618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f772aed8b85c110800000000000000
+      internalID: 1280583110691880798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1
+        width: 20
+        height: 56
+      alignment: 9
+      pivot: {x: 0.6255249, y: 0.0808714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0fe220ce94eb150800000000000000
+      internalID: 5890226640644927704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1
+        width: 20
+        height: 56
+      alignment: 9
+      pivot: {x: 0.625415, y: 0.08072499}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316578c1144f9a500800000000000000
+      internalID: 408125801742423571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1
+        width: 59
+        height: 56
+      alignment: 9
+      pivot: {x: 0.87390345, y: 0.08016962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae89f839e3ae1970800000000000000
+      internalID: 8727593349969186474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 1
+        width: 80
+        height: 56
+      alignment: 9
+      pivot: {x: 0.9063751, y: 0.08086074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772aa9768ed5bf2a0800000000000000
+      internalID: -6702660367658868105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 1
+        width: 107
+        height: 56
+      alignment: 9
+      pivot: {x: 0.93042904, y: 0.08016962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64edcb3be79a7c930800000000000000
+      internalID: 4163482742173785670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2542
+        y: 1
+        width: 132
+        height: 56
+      alignment: 9
+      pivot: {x: 0.94361275, y: 0.0794785}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f556bebae858b2600800000000000000
+      internalID: 444595836042306911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2842
+        y: 1
+        width: 101
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96512bd0c48eb98e0800000000000000
+      internalID: -1685498222175185559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2954
+        y: 1
+        width: 20
+        height: 56
+      alignment: 9
+      pivot: {x: 0.6241089, y: 0.078887895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0262c46d7756e438ed151c2f6a9187
+      internalID: 1496867582540398626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3142
+        y: 1
+        width: 23
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7004334486e0914db1ef5e9a6ba763b
+      internalID: -7025182189520217467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3254
+        y: 1
+        width: 20
+        height: 56
+      alignment: 9
+      pivot: {x: 0.6241089, y: 0.078887895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd2008da75c72341a6b8ee2bcbe2f27
+      internalID: -3963624889575366515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3442
+        y: 1
+        width: 132
+        height: 56
+      alignment: 9
+      pivot: {x: 0.94335383, y: 0.078887895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e07eddf9247b1a40878c94ebb2972b8
+      internalID: 3728741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauloL2-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3854
+        y: 1
+        width: 20
+        height: 56
+      alignment: 9
+      pivot: {x: 0.6241089, y: 0.078887895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aaed2ba811a44943899f16cea0dd53b
+      internalID: 416896036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d50c8925fa25511478ae738e3b7ed1de
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":12.0,"y":1.0},"gridSpriteSize":{"x":325.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PauloL2-Sheet_0: 6620491930595509143
+      PauloL2-Sheet_1: 1130922725364492797
+      PauloL2-Sheet_10: 1496867582540398626
+      PauloL2-Sheet_11: -7025182189520217467
+      PauloL2-Sheet_12: -3963624889575366515
+      PauloL2-Sheet_13: 3728741
+      PauloL2-Sheet_14: 416896036
+      PauloL2-Sheet_2: 1280583110691880798
+      PauloL2-Sheet_3: 5890226640644927704
+      PauloL2-Sheet_4: 408125801742423571
+      PauloL2-Sheet_5: 8727593349969186474
+      PauloL2-Sheet_6: -6702660367658868105
+      PauloL2-Sheet_7: 4163482742173785670
+      PauloL2-Sheet_8: 444595836042306911
+      PauloL2-Sheet_9: -1685498222175185559
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

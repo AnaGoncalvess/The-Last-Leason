@@ -1,0 +1,795 @@
+fileFormatVersion: 2
+guid: 6515dbd2a5d05c143bd8b9d054cb9475
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -348283559912882274
+    second: paulo-corrida-spriteSheet_0
+  - first:
+      213: -7483300368526406412
+    second: paulo-corrida-spriteSheet_1
+  - first:
+      213: 465040030676194134
+    second: paulo-corrida-spriteSheet_2
+  - first:
+      213: 945222267207795530
+    second: paulo-corrida-spriteSheet_3
+  - first:
+      213: 8510859621940776448
+    second: paulo-corrida-spriteSheet_4
+  - first:
+      213: -7429857751043020563
+    second: paulo-corrida-spriteSheet_5
+  - first:
+      213: 7855284777321012347
+    second: paulo-corrida-spriteSheet_6
+  - first:
+      213: 1427232439728550029
+    second: paulo-corrida-spriteSheet_7
+  - first:
+      213: 9070079784934822920
+    second: paulo-corrida-spriteSheet_8
+  - first:
+      213: -8337845027217358121
+    second: paulo-corrida-spriteSheet_9
+  - first:
+      213: -8895844913541698973
+    second: paulo-corrida-spriteSheet_10
+  - first:
+      213: 8093149606098258001
+    second: paulo-corrida-spriteSheet_11
+  - first:
+      213: -4837781603649406579
+    second: paulo-corrida-spriteSheet_12
+  - first:
+      213: 267307545370875526
+    second: paulo-corrida-spriteSheet_13
+  - first:
+      213: -2949193403044044099
+    second: paulo-corrida-spriteSheet_14
+  - first:
+      213: 742258144457339520
+    second: paulo-corrida-spriteSheet_15
+  - first:
+      213: 5913813664898647231
+    second: paulo-corrida-spriteSheet_16
+  - first:
+      213: 8529473506624087375
+    second: paulo-corrida-spriteSheet_17
+  - first:
+      213: 4566832154227487357
+    second: paulo-corrida-spriteSheet_18
+  - first:
+      213: -6006840803979815115
+    second: paulo-corrida-spriteSheet_19
+  - first:
+      213: -1471188546390260419
+    second: paulo-corrida-spriteSheet_20
+  - first:
+      213: -8890453281071200738
+    second: paulo-corrida-spriteSheet_21
+  - first:
+      213: -5865703210307795665
+    second: paulo-corrida-spriteSheet_22
+  - first:
+      213: -1945618087834605015
+    second: paulo-corrida-spriteSheet_23
+  - first:
+      213: -2741107339683071020
+    second: paulo-corrida-spriteSheet_24
+  - first:
+      213: -7883924492789711236
+    second: paulo-corrida-spriteSheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 11
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fb84292f5aa2bf0800000000000000
+      internalID: -348283559912882274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc0f6a86f9f52890800000000000000
+      internalID: -7483300368526406412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6539acaa177247600800000000000000
+      internalID: 465040030676194134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1
+        width: 19
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43c5bed4aa1e1d00800000000000000
+      internalID: 945222267207795530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 1
+        width: 25
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ecef2dbb5ac1670800000000000000
+      internalID: 8510859621940776448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8e5619db7d3e890800000000000000
+      internalID: -7429857751043020563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c90c9c2e3930d60800000000000000
+      internalID: 7855284777321012347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d803fe5975c8ec310800000000000000
+      internalID: 1427232439728550029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804dd7152856fdd70800000000000000
+      internalID: 9070079784934822920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 2785
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2c370af160a4c80800000000000000
+      internalID: -8337845027217358121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36aa16fee2c9b8480800000000000000
+      internalID: -8895844913541698973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 3329
+        y: 1
+        width: 40
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1584499ffa4a05070800000000000000
+      internalID: 8093149606098258001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 3627
+        y: 1
+        width: 25
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89be8d534fbcdcb0800000000000000
+      internalID: -4837781603649406579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 3921
+        y: 1
+        width: 19
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686dc97dbcaa5b300800000000000000
+      internalID: 267307545370875526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 4217
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db262a5b93c5217d0800000000000000
+      internalID: -2949193403044044099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 4522
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082350889d70d4a00800000000000000
+      internalID: 742258144457339520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 4822
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4822c0236121250800000000000000
+      internalID: 5913813664898647231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 5118
+        y: 1
+        width: 19
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f452f6396f6ce5670800000000000000
+      internalID: 8529473506624087375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 5406
+        y: 1
+        width: 25
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72bf8de5a5a06f30800000000000000
+      internalID: 4566832154227487357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 5701
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53716784d1a63aca0800000000000000
+      internalID: -6006840803979815115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 6013
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3509cecfc9459be0800000000000000
+      internalID: -1471188546390260419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 6351
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e168b8138d3ce9480800000000000000
+      internalID: -8890453281071200738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 6704
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f254cbf0206d89ea0800000000000000
+      internalID: -5865703210307795665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 7058
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a2b0e48a6cff4e0800000000000000
+      internalID: -1945618087834605015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 7402
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db79f6c561a5f9d0800000000000000
+      internalID: -2741107339683071020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-corrida-spriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 7738
+        y: 1
+        width: 37
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e7443d17ca69290800000000000000
+      internalID: -7883924492789711236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b78550a1f64724848aa35e1d04119a5c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":100.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      paulo-corrida-spriteSheet_0: -348283559912882274
+      paulo-corrida-spriteSheet_1: -7483300368526406412
+      paulo-corrida-spriteSheet_10: -8895844913541698973
+      paulo-corrida-spriteSheet_11: 8093149606098258001
+      paulo-corrida-spriteSheet_12: -4837781603649406579
+      paulo-corrida-spriteSheet_13: 267307545370875526
+      paulo-corrida-spriteSheet_14: -2949193403044044099
+      paulo-corrida-spriteSheet_15: 742258144457339520
+      paulo-corrida-spriteSheet_16: 5913813664898647231
+      paulo-corrida-spriteSheet_17: 8529473506624087375
+      paulo-corrida-spriteSheet_18: 4566832154227487357
+      paulo-corrida-spriteSheet_19: -6006840803979815115
+      paulo-corrida-spriteSheet_2: 465040030676194134
+      paulo-corrida-spriteSheet_20: -1471188546390260419
+      paulo-corrida-spriteSheet_21: -8890453281071200738
+      paulo-corrida-spriteSheet_22: -5865703210307795665
+      paulo-corrida-spriteSheet_23: -1945618087834605015
+      paulo-corrida-spriteSheet_24: -2741107339683071020
+      paulo-corrida-spriteSheet_25: -7883924492789711236
+      paulo-corrida-spriteSheet_3: 945222267207795530
+      paulo-corrida-spriteSheet_4: 8510859621940776448
+      paulo-corrida-spriteSheet_5: -7429857751043020563
+      paulo-corrida-spriteSheet_6: 7855284777321012347
+      paulo-corrida-spriteSheet_7: 1427232439728550029
+      paulo-corrida-spriteSheet_8: 9070079784934822920
+      paulo-corrida-spriteSheet_9: -8337845027217358121
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: ea387e044ecb08a4a97350f2ef9c39cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3401597197193190356
+    second: paulo-laser-spriteSheet_0
+  - first:
+      213: 3165899811578150193
+    second: paulo-laser-spriteSheet_1
+  - first:
+      213: -1964629451670712525
+    second: paulo-laser-spriteSheet_2
+  - first:
+      213: -2086636436103579453
+    second: paulo-laser-spriteSheet_3
+  - first:
+      213: -3083992490800232756
+    second: paulo-laser-spriteSheet_4
+  - first:
+      213: 5708885596247353368
+    second: paulo-laser-spriteSheet_5
+  - first:
+      213: -5088987867036984857
+    second: paulo-laser-spriteSheet_6
+  - first:
+      213: 2350930919727823560
+    second: paulo-laser-spriteSheet_7
+  - first:
+      213: 329393565181350338
+    second: paulo-laser-spriteSheet_8
+  - first:
+      213: -3680449584106360324
+    second: paulo-laser-spriteSheet_9
+  - first:
+      213: 241275894149428096
+    second: paulo-laser-spriteSheet_10
+  - first:
+      213: -122975585884105264
+    second: paulo-laser-spriteSheet_11
+  - first:
+      213: 7429377360687695615
+    second: paulo-laser-spriteSheet_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 11
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24e5502f591bc0d0800000000000000
+      internalID: -3401597197193190356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d779fda198feb20800000000000000
+      internalID: 3165899811578150193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f85e93ceb3cb4e0800000000000000
+      internalID: -1964629451670712525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8b8a28737ca03e0800000000000000
+      internalID: -2086636436103579453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc641e75b257335d0800000000000000
+      internalID: -3083992490800232756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818eaabe3390a3f40800000000000000
+      internalID: 5708885596247353368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e9dcfe5f784069b0800000000000000
+      internalID: -5088987867036984857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2354
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cafbd9373f20a020800000000000000
+      internalID: 2350930919727823560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 2654
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c11febc3bd329400800000000000000
+      internalID: 329393565181350338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 2954
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf13b956a9a6cecc0800000000000000
+      internalID: -3680449584106360324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 3254
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08334abb52f295300800000000000000
+      internalID: 241275894149428096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 3554
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5155f2b5a1b4ef0800000000000000
+      internalID: -122975585884105264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paulo-laser-spriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 3854
+        y: 1
+        width: 20
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff68e16d8537a1760800000000000000
+      internalID: 7429377360687695615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b43f6cf79740b1f46a0f70a253d2597c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      paulo-laser-spriteSheet_0: -3401597197193190356
+      paulo-laser-spriteSheet_1: 3165899811578150193
+      paulo-laser-spriteSheet_10: 241275894149428096
+      paulo-laser-spriteSheet_11: -122975585884105264
+      paulo-laser-spriteSheet_12: 7429377360687695615
+      paulo-laser-spriteSheet_2: -1964629451670712525
+      paulo-laser-spriteSheet_3: -2086636436103579453
+      paulo-laser-spriteSheet_4: -3083992490800232756
+      paulo-laser-spriteSheet_5: 5708885596247353368
+      paulo-laser-spriteSheet_6: -5088987867036984857
+      paulo-laser-spriteSheet_7: 2350930919727823560
+      paulo-laser-spriteSheet_8: 329393565181350338
+      paulo-laser-spriteSheet_9: -3680449584106360324
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

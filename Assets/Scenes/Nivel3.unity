@@ -1441,7 +1441,7 @@ MonoBehaviour:
   health: 1
   jumpForce: 17
   invincibilityCooldown: 1.5
-  maxHits: 4
+  maxHits: 10
   cameraController: {fileID: 0}
   gameOverManager: {fileID: 1314658511}
   healthUI: {fileID: 888100011}
@@ -1466,11 +1466,11 @@ MonoBehaviour:
   attackDamage: 1
   attackLockDuration: 0.3
   attackCooldown: 0.5
-  jumpSfx: {fileID: 0}
+  jumpSfx: {fileID: 8300000, guid: 1569294fbcb682b459731b230e9c9987, type: 3}
   dashSfx: {fileID: 0}
   attackSfx: {fileID: 8300000, guid: 18c5bd85afaa14941afd964eca61ee61, type: 3}
   hitSfx: {fileID: 8300000, guid: ba85358db82d5c6409adc2c378ee00ee, type: 3}
-  deathSfx: {fileID: 0}
+  deathSfx: {fileID: 8300000, guid: 9389607facd8f7a40be2293a2703df99, type: 3}
   vidaMaxima: 100
   vidaAtual: 0
 --- !u!50 &600416610
@@ -1918,7 +1918,7 @@ Transform:
   m_GameObject: {fileID: 724049714}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.96, y: 3.12, z: 0}
+  m_LocalPosition: {x: -27.6, y: 1.9, z: 0}
   m_LocalScale: {x: 2.1875, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2313,16 +2313,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68dd9d031eae364eb88a08c18d53461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossController
-  vidaMaximaGolpes: 10
+  vidaMaximaGolpes: 100
   vidaAtualGolpes: 0
   danoAtaque: 25
-  alcanceProximidade: 14
+  alcanceProximidade: 22
   alcanceRabadaCurta: 3
   tempoEntreAtaques: 5
-  prefabProjetilCuspe: {fileID: 2959148539109538446, guid: ad8b5652d6e4b9241b9884a9ac90e845, type: 3}
-  pontoBocaCuspe: {fileID: 1220045902}
   pontoImpactoAtaque: {fileID: 724049715}
-  tamanhoCaixaAtaque: {x: 2.5, y: 2}
+  tamanhoCaixaAtaque: {x: 33, y: 2}
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -2332,6 +2330,11 @@ MonoBehaviour:
   playerTransform: {fileID: 600416612}
   atrasoAposMorte: 0.5
   colliderAtaque: {fileID: 0}
+  cuspidaSfx: {fileID: 0}
+  rabadaSfx: {fileID: 8300000, guid: 8d3eb7e98c8eebf49828efb77010900f, type: 3}
+  mudarFaseSfx: {fileID: 0}
+  hitSfx: {fileID: 0}
+  deathSfx: {fileID: 8300000, guid: a64c680084e34c645ab8a3e943ce5328, type: 3}
 --- !u!61 &1050818811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2370,7 +2373,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 1, y: 0}
-    oldSize: {x: 13.125, y: 10.625}
+    oldSize: {x: 12.3529415, y: 10}
     newSize: {x: 13.125, y: 10.625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2637,7 +2640,7 @@ RectTransform:
   m_GameObject: {fileID: 1112205101}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3961995, y: 1.3961995, z: 1.3961995}
+  m_LocalScale: {x: 1.5936221, y: 1.5936221, z: 1.5936221}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 168084056}
@@ -2646,7 +2649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -66}
+  m_AnchoredPosition: {x: 0, y: -70}
   m_SizeDelta: {x: 700, y: 350.26736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1112205103
@@ -3108,7 +3111,7 @@ RectTransform:
   m_GameObject: {fileID: 1387937556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.74958366, y: 0.74958366, z: 0.74958366}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1332906738}
@@ -3121,7 +3124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -10, y: -67.204}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1392425813
@@ -3400,7 +3403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5114886852541125529, guid: 82f7b0fa33474a34da674b8630e6c15e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.005371
+      value: 5.412998
       objectReference: {fileID: 0}
     - target: {fileID: 5114886852541125529, guid: 82f7b0fa33474a34da674b8630e6c15e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3764,7 +3767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -147, y: 305}
+  m_AnchoredPosition: {x: -147, y: 338}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1577053734

@@ -43,9 +43,9 @@ AnimationClip:
     - time: 1
       value: {fileID: 1496867582540398626, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
     - time: 1.1
-      value: {fileID: -7025182189520217467, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
+      value: {fileID: -2032610428, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
     - time: 1.2
-      value: {fileID: -3963624889575366515, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
+      value: {fileID: 389343133, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -79,8 +79,8 @@ AnimationClip:
     - {fileID: 444595836042306911, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
     - {fileID: -1685498222175185559, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
     - {fileID: 1496867582540398626, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
-    - {fileID: -7025182189520217467, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
-    - {fileID: -3963624889575366515, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
+    - {fileID: -2032610428, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
+    - {fileID: 389343133, guid: bb8f5ad760712df46b477a9b1f6b6a0e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -107,14 +107,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.5
-    functionName: AtivarHitboxLaser
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1.2
-    functionName: DesativarHitboxLaser
+    functionName: ExecutarDanoLaser
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

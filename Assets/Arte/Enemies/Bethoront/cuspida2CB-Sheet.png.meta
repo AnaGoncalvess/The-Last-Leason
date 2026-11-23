@@ -1,0 +1,730 @@
+fileFormatVersion: 2
+guid: 08bdd5d1fa2c6434d9082950e9e01bab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4306731831892719171
+    second: cuspida2CB-Sheet_0
+  - first:
+      213: 1122703994967807633
+    second: cuspida2CB-Sheet_1
+  - first:
+      213: -8032383942502565332
+    second: cuspida2CB-Sheet_2
+  - first:
+      213: -5089473051449764740
+    second: cuspida2CB-Sheet_3
+  - first:
+      213: -3794746589800556385
+    second: cuspida2CB-Sheet_4
+  - first:
+      213: 5311497454287558325
+    second: cuspida2CB-Sheet_5
+  - first:
+      213: -355830364804432530
+    second: cuspida2CB-Sheet_6
+  - first:
+      213: 4861725296050148656
+    second: cuspida2CB-Sheet_7
+  - first:
+      213: -8114952433682781685
+    second: cuspida2CB-Sheet_8
+  - first:
+      213: 8785283264074216632
+    second: cuspida2CB-Sheet_9
+  - first:
+      213: 2245497803343947201
+    second: cuspida2CB-Sheet_10
+  - first:
+      213: 3969300498846139032
+    second: cuspida2CB-Sheet_11
+  - first:
+      213: 4858428261398326337
+    second: cuspida2CB-Sheet_12
+  - first:
+      213: 7362185971776568121
+    second: cuspida2CB-Sheet_13
+  - first:
+      213: -2497374760029977894
+    second: cuspida2CB-Sheet_14
+  - first:
+      213: 4045135183906539819
+    second: cuspida2CB-Sheet_15
+  - first:
+      213: 3673720411139844629
+    second: cuspida2CB-Sheet_16
+  - first:
+      213: 2988077653088401511
+    second: cuspida2CB-Sheet_17
+  - first:
+      213: -7782805751069022962
+    second: cuspida2CB-Sheet_18
+  - first:
+      213: 8336004641675855499
+    second: cuspida2CB-Sheet_19
+  - first:
+      213: 2597702565860071090
+    second: cuspida2CB-Sheet_20
+  - first:
+      213: 7147972518322016578
+    second: cuspida2CB-Sheet_21
+  - first:
+      213: -75617407749144293
+    second: cuspida2CB-Sheet_22
+  - first:
+      213: -4467296652329312421
+    second: cuspida2CB-Sheet_23
+  - first:
+      213: 5604492363770987386
+    second: cuspida2CB-Sheet_24
+  - first:
+      213: -220531570767662929
+    second: cuspida2CB-Sheet_25
+  - first:
+      213: -4734474112622774314
+    second: cuspida2CB-Sheet_26
+  - first:
+      213: -5329322408379134710
+    second: cuspida2CB-Sheet_27
+  - first:
+      213: 6002108406137970403
+    second: cuspida2CB-Sheet_28
+  - first:
+      213: -8616032055789891149
+    second: cuspida2CB-Sheet_29
+  - first:
+      213: 8066276006242104584
+    second: cuspida2CB-Sheet_30
+  - first:
+      213: -8450678250126150136
+    second: cuspida2CB-Sheet_31
+  - first:
+      213: -2745433476214478705
+    second: cuspida2CB-Sheet_32
+  - first:
+      213: 6200127401812989124
+    second: cuspida2CB-Sheet_33
+  - first:
+      213: 9197642195008926196
+    second: cuspida2CB-Sheet_34
+  - first:
+      213: 8225654525833975468
+    second: cuspida2CB-Sheet_35
+  - first:
+      213: -5499606304943034784
+    second: cuspida2CB-Sheet_36
+  - first:
+      213: 1978885685802007801
+    second: cuspida2CB-Sheet_37
+  - first:
+      213: -5292049830412829516
+    second: cuspida2CB-Sheet_38
+  - first:
+      213: -2986695510313417392
+    second: cuspida2CB-Sheet_39
+  - first:
+      213: 361906137932172744
+    second: cuspida2CB-Sheet_40
+  - first:
+      213: 2497550376350605783
+    second: cuspida2CB-Sheet_41
+  - first:
+      213: 912373744698104017
+    second: cuspida2CB-Sheet_42
+  - first:
+      213: -6417245425149886672
+    second: cuspida2CB-Sheet_43
+  - first:
+      213: -5649200381851522870
+    second: cuspida2CB-Sheet_44
+  - first:
+      213: 777413498427153752
+    second: cuspida2CB-Sheet_45
+  - first:
+      213: -108884317753122400
+    second: cuspida2CB-Sheet_46
+  - first:
+      213: 7505184112735049555
+    second: cuspida2CB-Sheet_47
+  - first:
+      213: 1761339125322829226
+    second: cuspida2CB-Sheet_48
+  - first:
+      213: 1235640010416907636
+    second: cuspida2CB-Sheet_49
+  - first:
+      213: 6984593033681133361
+    second: cuspida2CB-Sheet_50
+  - first:
+      213: 7551486725987829859
+    second: cuspida2CB-Sheet_51
+  - first:
+      213: -7647592160679875303
+    second: cuspida2CB-Sheet_52
+  - first:
+      213: -7534860002998224520
+    second: cuspida2CB-Sheet_53
+  - first:
+      213: 4175208034034193415
+    second: cuspida2CB-Sheet_54
+  - first:
+      213: 3138932356784988620
+    second: cuspida2CB-Sheet_55
+  - first:
+      213: -7329001027196360798
+    second: cuspida2CB-Sheet_56
+  - first:
+      213: -1595576110632295892
+    second: cuspida2CB-Sheet_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8.5
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34635d678c594cb30800000000000000
+      internalID: 4306731831892719171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196d7f7c555a49f00800000000000000
+      internalID: 1122703994967807633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a35979c5d378090800000000000000
+      internalID: -8032383942502565332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74d962993f8e59b0800000000000000
+      internalID: -5089473051449764740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98105ef41a565bc0800000000000000
+      internalID: -3794746589800556385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b6933c0bca36b940800000000000000
+      internalID: 5311497454287558325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6db8812b26df0bf0800000000000000
+      internalID: -355830364804432530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0359992f561587340800000000000000
+      internalID: 4861725296050148656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a6525a1c5e16f80800000000000000
+      internalID: -8114952433682781685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4f35e05989be970800000000000000
+      internalID: 8785283264074216632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c56c30ea5c992f10800000000000000
+      internalID: 2245497803343947201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3850
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892418006c9c51730800000000000000
+      internalID: 3969300498846139032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14cad5f33ca9c6340800000000000000
+      internalID: 4858428261398326337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b3b12822dbb2660800000000000000
+      internalID: 7362185971776568121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 4900
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2036d23ea875dd0800000000000000
+      internalID: -2497374760029977894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b290f298405332830800000000000000
+      internalID: 4045135183906539819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51aa71eef3dabf230800000000000000
+      internalID: 3673720411139844629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 5950
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768fd914bc8c77920800000000000000
+      internalID: 2988077653088401511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuspida2CB-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 0
+        width: 350
+        height: 100
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05e9ab876bedf390800000000000000
+      internalID: -7782805751069022962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a526a5c4c4f047745a7b6aa76ee7a72f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":350.0,"y":100.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":1.0,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":8,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      cuspida2CB-Sheet_0: 4306731831892719171
+      cuspida2CB-Sheet_1: 1122703994967807633
+      cuspida2CB-Sheet_10: 2245497803343947201
+      cuspida2CB-Sheet_11: 3969300498846139032
+      cuspida2CB-Sheet_12: 4858428261398326337
+      cuspida2CB-Sheet_13: 7362185971776568121
+      cuspida2CB-Sheet_14: -2497374760029977894
+      cuspida2CB-Sheet_15: 4045135183906539819
+      cuspida2CB-Sheet_16: 3673720411139844629
+      cuspida2CB-Sheet_17: 2988077653088401511
+      cuspida2CB-Sheet_18: -7782805751069022962
+      cuspida2CB-Sheet_2: -8032383942502565332
+      cuspida2CB-Sheet_3: -5089473051449764740
+      cuspida2CB-Sheet_4: -3794746589800556385
+      cuspida2CB-Sheet_5: 5311497454287558325
+      cuspida2CB-Sheet_6: -355830364804432530
+      cuspida2CB-Sheet_7: 4861725296050148656
+      cuspida2CB-Sheet_8: -8114952433682781685
+      cuspida2CB-Sheet_9: 8785283264074216632
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6504978430293014021}
   - component: {fileID: 2610346420044726587}
   - component: {fileID: 5426656396267789583}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Bolinha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2782752671187684011, guid: 2fa015c1c64b11043ab25ef93f906d02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -130,7 +130,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.0011553764}
-  m_Radius: 0.025094748
+  m_Radius: 0.18
 --- !u!95 &6504978430293014021
 Animator:
   serializedVersion: 7
@@ -161,7 +161,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5512606805037137827}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

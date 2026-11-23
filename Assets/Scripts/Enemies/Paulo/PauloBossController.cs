@@ -18,11 +18,10 @@
 //     [SerializeField] private Vector2 areaDanoCorrida = new Vector2(1.8f, 3.0f);
 //     [SerializeField] private LayerMask playerLayer;
 
-//     [Header("Fase 2: Ataque de Laser Teleguiado")]
-//     [SerializeField] private GameObject prefabLaser;
-//     [SerializeField] private Transform pontoOlhoLaser;
+//     [Header("Fase 2: Ataque de Laser (Integrado na Animação)")]
+//     [SerializeField] private GameObject hitboxLaser; // Arraste o objeto filho HitboxLaser aqui
 //     [SerializeField] private float cooldownLaser = 2.5f;
-//     [SerializeField] private float atrasoDisparoLaser = 0.35f;
+//     [SerializeField] private float duracaoAnimacaoLaser = 1.2f;
 
 //     [Header("Configurações de Drop")]
 //     [SerializeField] private bool dropsCristal = true;
@@ -43,6 +42,7 @@
 //     private Collider2D colisorPrincipal;
 //     private int faseAtual = 1;
 //     private bool estaCorrendo = false;
+//     private bool estaAtacandoLaser = false;
 //     private bool jaAcertouNestaCorrida = false;
 //     private bool derrotado = false;
 //     private float proximoAtaqueTime;
@@ -55,6 +55,9 @@
 //         colisorPrincipal = GetComponent<Collider2D>();
 //         if (animator == null) animator = GetComponent<Animator>();
 //         if (animator != null) animator.applyRootMotion = false;
+
+//         // Garante que o colisor do laser comece desligado
+//         if (hitboxLaser != null) hitboxLaser.SetActive(false);
 
 //         vidaAtualGolpes = vidaMaximaGolpes;
 
@@ -79,13 +82,14 @@
 //             VerificarDanoCorrida();
 //         }
 
-//         if (!estaCorrendo)
+//         // Só vira para o Player quando não estiver correndo nem no meio do disparo do laser
+//         if (!estaCorrendo && !estaAtacandoLaser)
 //         {
 //             VirarParaPlayer();
 //         }
 
 //         float distancia = Vector2.Distance(transform.position, playerTransform.position);
-//         if (distancia <= alcanceVisao && Time.time >= proximoAtaqueTime && !estaCorrendo)
+//         if (distancia <= alcanceVisao && Time.time >= proximoAtaqueTime && !estaCorrendo && !estaAtacandoLaser)
 //         {
 //             if (faseAtual == 1)
 //             {
@@ -156,7 +160,11 @@
 
 //     private IEnumerator ExecutarAtaqueLaser()
 //     {
+//         estaAtacandoLaser = true;
 //         proximoAtaqueTime = Time.time + cooldownLaser;
+
+//         // Vira para o lado onde o Player está no início do ataque
+//         VirarParaPlayer();
 
 //         if (animator != null)
 //         {
@@ -164,19 +172,30 @@
 //             animator.SetTrigger("AtacarLaser");
 //         }
 
-//         yield return new WaitForSeconds(atrasoDisparoLaser);
+//         yield return new WaitForSeconds(duracaoAnimacaoLaser);
 
-//         if (!derrotado && vidaAtualGolpes > 0)
+//         // Garante que o colisor seja desligado ao fim do ataque
+//         DesativarHitboxLaser();
+//         estaAtacandoLaser = false;
+//     }
+
+//     // --- MÉTODOS PARA CHAMAR NO ANIMATION EVENT DA ANIMAÇÃO PauloLaser ---
+//     public void AtivarHitboxLaser()
+//     {
+//         if (!derrotado && hitboxLaser != null)
 //         {
-//             DispararLaser();
+//             hitboxLaser.SetActive(true);
 //         }
 //     }
 
-//     public void DispararLaser()
+//     public void DesativarHitboxLaser()
 //     {
-//         if (derrotado || prefabLaser == null || pontoOlhoLaser == null) return;
-//         Instantiate(prefabLaser, pontoOlhoLaser.position, Quaternion.identity);
+//         if (hitboxLaser != null)
+//         {
+//             hitboxLaser.SetActive(false);
+//         }
 //     }
+//     // ---------------------------------------------------------------------
 
 //     public void TomarDano(int quantidade = 1)
 //     {
@@ -221,7 +240,11 @@
 //         if (derrotado) return;
 //         derrotado = true;
 //         estaCorrendo = false;
+//         estaAtacandoLaser = false;
 //         rb.linearVelocity = Vector2.zero;
+
+//         // Desliga o laser imediatamente se morrer durante o ataque
+//         DesativarHitboxLaser();
 
 //         // Dropa o cristal ao morrer
 //         if (dropsCristal && cristalPrefab != null)
@@ -289,17 +312,17 @@ public class PauloBossController : MonoBehaviour
     [SerializeField] private Vector2 areaDanoCorrida = new Vector2(1.8f, 3.0f);
     [SerializeField] private LayerMask playerLayer;
 
-    [Header("Fase 2: Ataque de Laser (Integrado na Animação)")]
-    [SerializeField] private GameObject hitboxLaser; // Arraste o objeto filho HitboxLaser aqui
+    [Header("Fase 2: Ataque de Laser (Integrado na Animação - Padrão Bethoront)")]
+    [SerializeField] private Transform pontoImpactoLaser; // Arraste um objeto filho posicionado no meio do feixe do laser
+    [SerializeField] private Vector2 tamanhoCaixaLaser = new Vector2(12f, 1.5f);
+    [SerializeField] private float danoLaser = 25f;
     [SerializeField] private float cooldownLaser = 2.5f;
-    [SerializeField] private float duracaoAnimacaoLaser = 1.2f;
 
     [Header("Configurações de Drop")]
     [SerializeField] private bool dropsCristal = true;
     [SerializeField] private GameObject cristalPrefab;
     [SerializeField] private Vector2 offsetSpawnCristal = new Vector2(0f, 1.0f);
 
-    // Propriedade lida pelo ColetaveisManager para contar +1 item na cena
     public bool DropsCristal => dropsCristal && cristalPrefab != null;
 
     [Header("Detecção e Referências")]
@@ -309,11 +332,16 @@ public class PauloBossController : MonoBehaviour
     [SerializeField] private BossHealthBar healthBar;
     [SerializeField] private float atrasoAposMorte = 1.5f;
 
+    [Header("Sons (opcionais)")]
+    [SerializeField] private AudioClip corridaSfx;
+    [SerializeField] private AudioClip laserSfx;
+    [SerializeField] private AudioClip hitSfx;
+    [SerializeField] private AudioClip deathSfx;
+
     private Rigidbody2D rb;
     private Collider2D colisorPrincipal;
     private int faseAtual = 1;
     private bool estaCorrendo = false;
-    private bool estaAtacandoLaser = false;
     private bool jaAcertouNestaCorrida = false;
     private bool derrotado = false;
     private float proximoAtaqueTime;
@@ -326,9 +354,6 @@ public class PauloBossController : MonoBehaviour
         colisorPrincipal = GetComponent<Collider2D>();
         if (animator == null) animator = GetComponent<Animator>();
         if (animator != null) animator.applyRootMotion = false;
-
-        // Garante que o colisor do laser comece desligado
-        if (hitboxLaser != null) hitboxLaser.SetActive(false);
 
         vidaAtualGolpes = vidaMaximaGolpes;
 
@@ -346,21 +371,29 @@ public class PauloBossController : MonoBehaviour
 
     private void Update()
     {
-        if (derrotado || vidaAtualGolpes <= 0 || playerTransform == null) return;
+        if (derrotado || vidaAtualGolpes <= 0 || playerTransform == null || animator == null) return;
+
+        AnimatorStateInfo estadoAtual = animator.GetCurrentAnimatorStateInfo(0);
+        bool estaAtacandoLaser = estadoAtual.IsName("PauloLaser") || estadoAtual.IsName("Laser");
+
+        if (estaAtacandoLaser)
+        {
+            animator.ResetTrigger("AtacarLaser");
+        }
 
         if (estaCorrendo && !jaAcertouNestaCorrida)
         {
             VerificarDanoCorrida();
         }
 
-        // Só vira para o Player quando não estiver correndo nem no meio do disparo do laser
-        if (!estaCorrendo && !estaAtacandoLaser)
+        // Só vira para o Player quando não estiver correndo nem disparando o laser
+        if (!estaCorrendo && !estaAtacandoLaser && !animator.IsInTransition(0))
         {
             VirarParaPlayer();
         }
 
         float distancia = Vector2.Distance(transform.position, playerTransform.position);
-        if (distancia <= alcanceVisao && Time.time >= proximoAtaqueTime && !estaCorrendo && !estaAtacandoLaser)
+        if (distancia <= alcanceVisao && Time.time >= proximoAtaqueTime && !estaCorrendo && !estaAtacandoLaser && !animator.IsInTransition(0))
         {
             if (faseAtual == 1)
             {
@@ -368,7 +401,7 @@ public class PauloBossController : MonoBehaviour
             }
             else if (faseAtual == 2)
             {
-                StartCoroutine(ExecutarAtaqueLaser());
+                IniciarAtaqueLaser();
             }
         }
     }
@@ -413,6 +446,7 @@ public class PauloBossController : MonoBehaviour
         VirarParaPlayer();
         float direcaoInvestida = direcaoOlhar;
 
+        PlaySfx(corridaSfx);
         if (animator != null) animator.SetBool("Correndo", true);
 
         float tempoFim = Time.time + duracaoCorrida;
@@ -429,44 +463,40 @@ public class PauloBossController : MonoBehaviour
         proximoAtaqueTime = Time.time + cooldownCorrida;
     }
 
-    private IEnumerator ExecutarAtaqueLaser()
+    private void IniciarAtaqueLaser()
     {
-        estaAtacandoLaser = true;
-        proximoAtaqueTime = Time.time + cooldownLaser;
-
-        // Vira para o lado onde o Player está no início do ataque
         VirarParaPlayer();
+        proximoAtaqueTime = Time.time + cooldownLaser;
 
         if (animator != null)
         {
             animator.ResetTrigger("AtacarLaser");
             animator.SetTrigger("AtacarLaser");
         }
-
-        yield return new WaitForSeconds(duracaoAnimacaoLaser);
-
-        // Garante que o colisor seja desligado ao fim do ataque
-        DesativarHitboxLaser();
-        estaAtacandoLaser = false;
     }
 
-    // --- MÉTODOS PARA CHAMAR NO ANIMATION EVENT DA ANIMAÇÃO PauloLaser ---
-    public void AtivarHitboxLaser()
+    // --- MÉTODO PARA CHAMAR NO ANIMATION EVENT DA ANIMAÇÃO DO LASER ---
+    public void ExecutarDanoLaser()
     {
-        if (!derrotado && hitboxLaser != null)
+        if (derrotado) return;
+
+        PlaySfx(laserSfx);
+
+        Vector2 centroLaser = pontoImpactoLaser != null ? (Vector2)pontoImpactoLaser.position : (Vector2)transform.position;
+        Collider2D playerAtingido = Physics2D.OverlapBox(centroLaser, tamanhoCaixaLaser, 0f, playerLayer);
+
+        if (playerAtingido != null)
         {
-            hitboxLaser.SetActive(true);
+            Player scriptPlayer = playerAtingido.GetComponent<Player>();
+            if (scriptPlayer == null) scriptPlayer = playerAtingido.GetComponentInParent<Player>();
+
+            if (scriptPlayer != null)
+            {
+                scriptPlayer.TomarDano(danoLaser);
+            }
         }
     }
-
-    public void DesativarHitboxLaser()
-    {
-        if (hitboxLaser != null)
-        {
-            hitboxLaser.SetActive(false);
-        }
-    }
-    // ---------------------------------------------------------------------
+    // ------------------------------------------------------------------
 
     public void TomarDano(int quantidade = 1)
     {
@@ -481,6 +511,14 @@ public class PauloBossController : MonoBehaviour
         {
             healthBar.AtualizarBarra(vidaAtualGolpes, vidaMaximaGolpes);
         }
+
+        if (vidaAtualGolpes <= 0)
+        {
+            Morrer();
+            return;
+        }
+
+        PlaySfx(hitSfx);
 
         if (animator != null)
         {
@@ -499,11 +537,6 @@ public class PauloBossController : MonoBehaviour
             if (animator != null) animator.SetBool("Correndo", false);
             proximoAtaqueTime = Time.time + 0.8f;
         }
-
-        if (vidaAtualGolpes <= 0)
-        {
-            Morrer();
-        }
     }
 
     private void Morrer()
@@ -511,13 +544,10 @@ public class PauloBossController : MonoBehaviour
         if (derrotado) return;
         derrotado = true;
         estaCorrendo = false;
-        estaAtacandoLaser = false;
         rb.linearVelocity = Vector2.zero;
 
-        // Desliga o laser imediatamente se morrer durante o ataque
-        DesativarHitboxLaser();
+        PlaySfx(deathSfx);
 
-        // Dropa o cristal ao morrer
         if (dropsCristal && cristalPrefab != null)
         {
             Vector3 posSpawn = (Vector2)transform.position + offsetSpawnCristal;
@@ -555,10 +585,20 @@ public class PauloBossController : MonoBehaviour
         Destroy(gameObject);
     }
 
+    private void PlaySfx(AudioClip clip)
+    {
+        if (clip == null || AudioManager.Instance == null) return;
+        AudioManager.Instance.PlaySfx(clip);
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Vector2 centro = GetComponent<Collider2D>() != null ? (Vector2)GetComponent<Collider2D>().bounds.center : (Vector2)transform.position;
         Gizmos.DrawWireCube(centro, areaDanoCorrida);
+
+        Gizmos.color = Color.green;
+        Vector2 centroLaser = pontoImpactoLaser != null ? (Vector2)pontoImpactoLaser.position : (Vector2)transform.position;
+        Gizmos.DrawWireCube(centroLaser, tamanhoCaixaLaser);
     }
 }

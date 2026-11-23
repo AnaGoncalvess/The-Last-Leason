@@ -1,176 +1,165 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// Deixa o jogo responsivo em qualquer dispositivo mantendo a proporção 16:9 (1280x720).
+///
+/// - Roda sozinho em TODAS as cenas (não precisa estar em nenhum objeto).
+///   Instâncias antigas deste script que estão nas cenas se desativam sozinhas.
+/// - Câmera: viewport 16:9 centralizado (barras pretas em cima/embaixo ou nas laterais).
+///   Uma câmera de fundo preto limpa as barras, evitando "lixo" de imagem em celulares.
+/// - Canvas: Scale With Screen Size, 1280x720, modo Expand. A UI usa a mesma escala
+///   da área do jogo e nunca é cortada, qualquer que seja a proporção da tela.
+/// </summary>
 public class CameraAspectFitter : MonoBehaviour
 {
-    private const float TargetAspect = 1280f / 720f; // Proporção alvo exata (16:9)
+    private const float RefWidth = 1280f;
+    private const float RefHeight = 720f;
+    private const float TargetAspect = RefWidth / RefHeight; // 16:9
+
+    // Garante o mesmo Canvas Scaler em todas as cenas (inclusive futuras).
+    private const bool ForcarCanvasScaler = true;
+
+    private static CameraAspectFitter instance;
+
     private int lastScreenWidth;
     private int lastScreenHeight;
-    private Camera mainCam;
+    private Camera lastMainCam;
+    private Camera backgroundCam;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    private static void Bootstrap()
+    {
+        if (instance != null) return;
+
+        GameObject go = new GameObject("ResponsiveScreen");
+        DontDestroyOnLoad(go);
+        go.AddComponent<CameraAspectFitter>();
+    }
+
+    private void Awake()
+    {
+        // Cópia colocada manualmente numa cena: o gerenciador global já cuida de tudo.
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+
+        instance = this;
+        CriarCameraDeFundo();
+    }
+
+    private void OnEnable()
+    {
+        if (instance != this) return;
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 
     private void Start()
     {
+        if (instance != this) return;
         AplicarAjusteCompleto();
     }
 
-    private void Update()
+    private void LateUpdate()
     {
-        // Reajusta se a janela do jogo for redimensionada
-        if (Screen.width != lastScreenWidth || Screen.height != lastScreenHeight)
+        if (instance != this) return;
+
+        // Reajusta se a janela/tela mudou (redimensionar, girar o celular) ou se a câmera trocou.
+        if (Screen.width != lastScreenWidth ||
+            Screen.height != lastScreenHeight ||
+            Camera.main != lastMainCam)
         {
             AplicarAjusteCompleto();
         }
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        AplicarAjusteCompleto();
     }
 
     private void AplicarAjusteCompleto()
     {
         lastScreenWidth = Screen.width;
         lastScreenHeight = Screen.height;
+        lastMainCam = Camera.main;
 
-        AjustarCameraPrincipal();
-        // Nota: O ajuste forçado do Canvas para 1920x1080 foi removido daqui para proteger o teu projeto!
+        AjustarCameras();
+        if (ForcarCanvasScaler) AjustarCanvas();
     }
 
-    private void AjustarCameraPrincipal()
+    private void CriarCameraDeFundo()
     {
-        mainCam = GetComponent<Camera>();
-        if (mainCam == null) mainCam = Camera.main;
-        if (mainCam == null) return;
+        GameObject bg = new GameObject("LetterboxBackground");
+        bg.transform.SetParent(transform, false);
 
-        // Garante fundo preto nas barras laterais/superiores se a tela mudar de proporção
-        mainCam.clearFlags = CameraClearFlags.SolidColor;
-        mainCam.backgroundColor = Color.black;
+        backgroundCam = bg.AddComponent<Camera>();
+        backgroundCam.clearFlags = CameraClearFlags.SolidColor;
+        backgroundCam.backgroundColor = Color.black;
+        backgroundCam.cullingMask = 0;          // não desenha nada, só limpa a tela de preto
+        backgroundCam.depth = -100;             // roda antes de todas as outras câmeras
+        backgroundCam.orthographic = true;
+        backgroundCam.allowHDR = false;
+        backgroundCam.allowMSAA = false;
+        backgroundCam.useOcclusionCulling = false;
+    }
 
+    private Rect CalcularViewport()
+    {
         float windowAspect = (float)Screen.width / Screen.height;
         float scaleHeight = windowAspect / TargetAspect;
 
-        Rect rect = mainCam.rect;
-
         if (scaleHeight < 1.0f)
         {
-            // Tela mais alta que o normal -> barras pretas em cima e embaixo
-            rect.width = 1.0f;
-            rect.height = scaleHeight;
-            rect.x = 0f;
-            rect.y = (1.0f - scaleHeight) / 2.0f;
-        }
-        else
-        {
-            // Tela mais larga -> barras pretas nas laterais
-            float scaleWidth = 1.0f / scaleHeight;
-            rect.width = scaleWidth;
-            rect.height = 1.0f;
-            rect.x = (1.0f - scaleWidth) / 2.0f;
-            rect.y = 0f;
+            // Tela mais "alta" que 16:9 (tablet 4:3, celular em pé) -> barras em cima e embaixo
+            return new Rect(0f, (1.0f - scaleHeight) / 2.0f, 1.0f, scaleHeight);
         }
 
-        mainCam.rect = rect;
+        // Tela mais larga que 16:9 (celular 20:9, ultrawide) -> barras nas laterais
+        float scaleWidth = 1.0f / scaleHeight;
+        return new Rect((1.0f - scaleWidth) / 2.0f, 0f, scaleWidth, 1.0f);
+    }
+
+    private void AjustarCameras()
+    {
+        Rect rect = CalcularViewport();
+
+        foreach (Camera cam in Camera.allCameras)
+        {
+            if (cam == backgroundCam) continue;
+            if (cam.targetTexture != null) continue; // câmeras que renderizam em textura não entram
+
+            cam.rect = rect;
+        }
+
+        Camera main = Camera.main;
+        if (main != null)
+        {
+            main.clearFlags = CameraClearFlags.SolidColor;
+            main.backgroundColor = Color.black;
+        }
+    }
+
+    private void AjustarCanvas()
+    {
+        CanvasScaler[] scalers = FindObjectsByType<CanvasScaler>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+
+        foreach (CanvasScaler scaler in scalers)
+        {
+            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            scaler.referenceResolution = new Vector2(RefWidth, RefHeight);
+            // Expand: escala = menor entre (largura/1280) e (altura/720).
+            // Mesma escala da área 16:9 do jogo e a UI nunca fica cortada.
+            scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
+            scaler.matchWidthOrHeight = 0.5f;
+        }
     }
 }
-
-
-// using UnityEngine;
-// using UnityEngine.SceneManagement;
-// using UnityEngine.UI;
-
-// public class CameraAspectFitter : MonoBehaviour
-// {
-//     private const float TargetAspect = 16f / 9f; // Proporção padrão do PC da escola
-//     private int lastScreenWidth;
-//     private int lastScreenHeight;
-//     private Camera mainCam;
-
-//     // Roda automaticamente em TODAS as cenas sem precisar colocar em nenhum objeto!
-//     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
-//     private static void Init()
-//     {
-//         GameObject obj = new GameObject("AutoResponsiveManager");
-//         DontDestroyOnLoad(obj);
-//         obj.AddComponent<CameraAspectFitter>();
-//     }
-
-//     private void OnEnable()
-//     {
-//         SceneManager.sceneLoaded += OnSceneLoaded;
-//     }
-
-//     private void OnDisable()
-//     {
-//         SceneManager.sceneLoaded -= OnSceneLoaded;
-//     }
-
-//     private void Start()
-//     {
-//         AplicarAjusteCompleto();
-//     }
-
-//     private void Update()
-//     {
-//         // Reajusta na hora se o jogador redimensionar a janela no navegador ou PC
-//         if (Screen.width != lastScreenWidth || Screen.height != lastScreenHeight)
-//         {
-//             AplicarAjusteCompleto();
-//         }
-//     }
-
-//     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-//     {
-//         AplicarAjusteCompleto();
-//     }
-
-//     private void AplicarAjusteCompleto()
-//     {
-//         lastScreenWidth = Screen.width;
-//         lastScreenHeight = Screen.height;
-
-//         AjustarCameraPrincipal();
-//         AjustarTodosOsCanvas();
-//     }
-
-//     private void AjustarCameraPrincipal()
-//     {
-//         mainCam = Camera.main;
-//         if (mainCam == null) return;
-
-//         // Garante fundo preto nas barras laterais/superiores
-//         mainCam.clearFlags = CameraClearFlags.SolidColor;
-//         mainCam.backgroundColor = Color.black;
-
-//         float windowAspect = (float)Screen.width / Screen.height;
-//         float scaleHeight = windowAspect / TargetAspect;
-
-//         Rect rect = mainCam.rect;
-
-//         if (scaleHeight < 1.0f)
-//         {
-//             // Tela mais alta/quadrada que 16:9 -> barras pretas em cima e embaixo
-//             rect.width = 1.0f;
-//             rect.height = scaleHeight;
-//             rect.x = 0f;
-//             rect.y = (1.0f - scaleHeight) / 2.0f;
-//         }
-//         else
-//         {
-//             // Tela mais larga que 16:9 (como notebook 16:10 ou ultrawide) -> barras pretas nas laterais
-//             float scaleWidth = 1.0f / scaleHeight;
-//             rect.width = scaleWidth;
-//             rect.height = 1.0f;
-//             rect.x = (1.0f - scaleWidth) / 2.0f;
-//             rect.y = 0f;
-//         }
-
-//         mainCam.rect = rect;
-//     }
-
-//     private void AjustarTodosOsCanvas()
-//     {
-//         CanvasScaler[] scalers = FindObjectsByType<CanvasScaler>(FindObjectsSortMode.None);
-//         foreach (CanvasScaler scaler in scalers)
-//         {
-//             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-//             scaler.referenceResolution = new Vector2(1920f, 1080f);
-//             scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
-//             scaler.matchWidthOrHeight = 0.5f;
-//         }
-//     }
-// }

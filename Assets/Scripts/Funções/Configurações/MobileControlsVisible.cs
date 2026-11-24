@@ -2,18 +2,37 @@ using UnityEngine;
 
 public class MobileControlsVisible : MonoBehaviour
 {
-    void Awake()
+    [Header("Painel dos Botoes Tateis")]
+    public GameObject mobileControlsPanel;
+
+    [Header("Modo de Teste no Editor")]
+    [Tooltip("Marca esta caixa se quiseres forçar os botões a aparecer no Unity Editor / Simulator para testes.")]
+    public bool forceShowInEditor = false;
+
+    void Start()
     {
-        // Verifica se está a correr num telemóvel/tablet OU se estamos a forçar o teste no editor do Unity
-        bool isMobile = Application.isMobilePlatform || SystemInfo.deviceType == DeviceType.Handheld;
+        UpdateControlsVisibility();
+    }
+
+    void UpdateControlsVisibility()
+    {
+        if (mobileControlsPanel == null) return;
 
         #if UNITY_EDITOR
-        // Se estiveres no Editor do Unity e quiseres testar os botões na tela, muda para 'true'
-        // Quando fores publicar para PC/Itch.io, podes mudar para 'false' para esconder no PC
-        isMobile = true; 
+        if (forceShowInEditor)
+        {
+            mobileControlsPanel.SetActive(true);
+            return;
+        }
         #endif
 
-        // Ativa ou desativa o objeto (o painel ou os botões) com base na plataforma
-        gameObject.SetActive(isMobile);
+        if (Application.isMobilePlatform)
+        {
+            mobileControlsPanel.SetActive(true);
+        }
+        else
+        {
+            mobileControlsPanel.SetActive(false);
+        }
     }
 }

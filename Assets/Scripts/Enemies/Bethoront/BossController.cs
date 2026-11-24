@@ -455,6 +455,8 @@ public class BossController : MonoBehaviour
                 scriptPlayer.TomarDano(danoAtaque);
             }
         }
+
+        Debug.Log("EVENTO DE ATAQUE CHAMADO! Acertou Player? " + (playerAtingido != null));
     }
 
     public void TomarDano(int quantidade = 1)

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -13,7 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float health = 1.2f;
     [SerializeField] private float jumpForce = 19f;
     private bool isJumping;
-    private bool isAttacking;
+    [SerializeField]private bool isAttacking;
 
     private float mobileHorizontalInput = 0f;
 
@@ -120,29 +121,51 @@ public class Player : MonoBehaviour
         dashTrail.emitting = false;
     }
 
+    // private void Update()
+    // {
+    //     if (isDead || (PauseManager.Instance != null && PauseManager.Instance.IsPaused)) return;
+
+    //     if (Input.GetButtonDown("Jump")) TriggerJump();
+    //     if (Input.GetButtonDown("Fire1")) TriggerAttack();
+    //     if (Input.GetButtonDown("Fire3")) TriggerDash();
+
+    //     UpdateDash();
+
+
+    //     if (Input.GetMouseButtonDown(0))
+    //     {
+    //         // Se o rato estiver em cima de um botão da UI (HUD), cancela o ataque/ação
+    //         if (EventSystem.current.IsPointerOverGameObject())
+    //         {
+    //             return;
+    //         }
+
+    //         // Se chegou aqui, clicou fora dos botões! Podes chamar o ataque ou ação de mundo:
+    //         // Atacar();
+    //     }
+    // }
+
     private void Update()
-    {
-        if (isDead || (PauseManager.Instance != null && PauseManager.Instance.IsPaused)) return;
+{
+    if (isDead || (PauseManager.Instance != null && PauseManager.Instance.IsPaused)) return;
 
-        if (Input.GetButtonDown("Jump")) TriggerJump();
-        if (Input.GetButtonDown("Fire1")) TriggerAttack();
-        if (Input.GetButtonDown("Fire3")) TriggerDash();
+    if (Input.GetButtonDown("Fire1")) TriggerAttack();
 
-        UpdateDash();
+    if (Input.GetButtonDown("Jump")) TriggerJump();
 
+    // Verificação 100% certeira para bloquear o ataque ao tocar em qualquer botão da UI
+    // if (Input.GetButtonDown("Fire1"))
+    // {
+    //     if (!IsPointerOverUI())
+    //     {
+    //         TriggerAttack();
+    //     }
+    // }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            // Se o rato estiver em cima de um botão da UI (HUD), cancela o ataque/ação
-            if (EventSystem.current.IsPointerOverGameObject())
-            {
-                return;
-            }
+    if (Input.GetButtonDown("Fire3")) TriggerDash();
 
-            // Se chegou aqui, clicou fora dos botões! Podes chamar o ataque ou ação de mundo:
-            // Atacar();
-        }
-    }
+    UpdateDash();
+}
 
     private void FixedUpdate()
     {
@@ -461,4 +484,29 @@ public class Player : MonoBehaviour
 
         OnHit();
     }
+
+    private bool IsPointerOverUI()
+{
+    if (EventSystem.current == null) return false;
+
+    // 1. Verifica se há toques ativos no ecrã (Telemóvel ou Simulador Touch)
+    if (Input.touchCount > 0)
+    {
+        for (int i = 0; i < Input.touchCount; i++)
+        {
+            if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(i).fingerId))
+            {
+                return true;
+            }
+        }
+    }
+
+    // 2. Verifica cliques de rato tradicionais (Editor do Unity / PC)
+    if (EventSystem.current.IsPointerOverGameObject())
+    {
+        return true;
+    }
+
+    return false;
+}
 }

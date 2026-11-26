@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,42 +85,33 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 10
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: 3
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
-    - serializedVersion: 2
-      name: game-over-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 1917, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9053a33fb7abc66d0800000000000000
-      internalID: -2995814610583800567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: game-over-Sheet_1
       rect:
@@ -147,7 +138,7 @@ TextureImporter:
       name: game-over-Sheet_2
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 3840
         y: 0
         width: 1920
         height: 1080
@@ -169,7 +160,7 @@ TextureImporter:
       name: game-over-Sheet_3
       rect:
         serializedVersion: 2
-        x: 3841
+        x: 5760
         y: 0
         width: 1920
         height: 1080
@@ -191,7 +182,7 @@ TextureImporter:
       name: game-over-Sheet_4
       rect:
         serializedVersion: 2
-        x: 5761
+        x: 7680
         y: 0
         width: 1920
         height: 1080
@@ -213,7 +204,7 @@ TextureImporter:
       name: game-over-Sheet_5
       rect:
         serializedVersion: 2
-        x: 7680
+        x: 9600
         y: 0
         width: 1920
         height: 1080
@@ -235,7 +226,7 @@ TextureImporter:
       name: game-over-Sheet_6
       rect:
         serializedVersion: 2
-        x: 9600
+        x: 11520
         y: 0
         width: 1920
         height: 1080
@@ -257,7 +248,7 @@ TextureImporter:
       name: game-over-Sheet_7
       rect:
         serializedVersion: 2
-        x: 11520
+        x: 13440
         y: 0
         width: 1920
         height: 1080
@@ -279,7 +270,7 @@ TextureImporter:
       name: game-over-Sheet_8
       rect:
         serializedVersion: 2
-        x: 13440
+        x: 15360
         y: 0
         width: 1920
         height: 1080
@@ -298,10 +289,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game-over-Sheet_9
+      name: game-over-Sheet_0
       rect:
         serializedVersion: 2
-        x: 15360
+        x: 1920
         y: 0
         width: 1920
         height: 1080
@@ -313,8 +304,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b03d8853d8080c9438355cdbf6f702a9
-      internalID: -330883158
+      spriteID: 76e925a405264384790a2f4659bc0da2
+      internalID: -2995814610583800567
       vertices: []
       indices: 
       edges: []
